@@ -5343,7 +5343,7 @@
         <Condition Enabled="false" Grouping="Or" />
         <Conditions />
       </Trigger>
-      <Trigger Enabled="true" Source="FFXIVNetwork" Name="我优先级多少(记得勾上自己,不要碰别的)" Id="aa6e1f0f-17ab-41a8-8dbe-f914cf5a6f1e" RegularExpression="^27\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;myidis&gt;[A-Z0-9]{4})\|">
+      <Trigger Enabled="true" Source="FFXIVNetwork" Name="我优先级多少(在上方勾上自己的职能,在下方填写队伍中对应人的ID)" Id="aa6e1f0f-17ab-41a8-8dbe-f914cf5a6f1e" RegularExpression="^27\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;myidis&gt;[A-Z0-9]{4})\|">
         <Actions>
           <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="mtismy" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Variable" Asynchronous="False">
             <Condition Enabled="false" Grouping="Or" />
