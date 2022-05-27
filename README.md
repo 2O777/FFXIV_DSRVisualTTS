@@ -25,3 +25,9 @@
 > 修改播报位置即可
 
 _该处查找标记的逻辑来自[Discord / Jin❗Vitali#1988](https://discord.com/channels/374517624228544512/399219257302450196/968813549482831882)_
+
+## P2一运(雷枪)
+* 蓝标点名踩塔优先级基于
+* **无视T的**
+* ![图片](https://user-images.githubusercontent.com/31427200/170693254-454239c3-c599-40eb-aff8-8c23ce8c86ee.png)
+* ![图片](https://user-images.githubusercontent.com/31427200/170693284-bfd2df90-b671-4e79-8257-47aae391b995.png)
