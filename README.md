@@ -36,3 +36,23 @@ _该处查找标记的逻辑来自[Discord / Jin❗Vitali#1988](https://discord.
 * **无视T的**
 * ![图片](https://user-images.githubusercontent.com/31427200/170693486-cd942000-07b5-459d-a1cd-ee598048ecb3.png)
 * ![图片](https://user-images.githubusercontent.com/31427200/170693710-fde08f75-9961-4eab-8399-6828eb58a1a8.png)
+
+**该优先级无法更改**
+
+## P2二运(圣杖)
+* **跑刀没有走位/换位指引,依靠画出危险范围作为提醒**
+* 点了陨石一组叫**陨石组**没点陨石一组叫**固定组**
+* 刀跑完之后按如下方向站位
+* ![图片](https://user-images.githubusercontent.com/31427200/170695155-ddbf799a-e9f8-4f75-8666-7cc70385bc57.png)
+
+* **如果发生换位只有陨石组参与**
+* 陨石永远从 **A / C** 起跑
+* **B / D** 的人点了陨石和 **A / C** 没点陨石的人交換
+* **换位举例**
+* ![图片](https://user-images.githubusercontent.com/31427200/170695506-81a7875b-acab-4421-9d3d-93a1ae343f49.png)
+* 
+* **如果发生陨石刚好在 B / D 方向,执行如下换位**
+* ![图片](https://user-images.githubusercontent.com/31427200/170695629-67585bcc-8602-47f8-90ad-6e6639d7c805.png)
+
+
+
