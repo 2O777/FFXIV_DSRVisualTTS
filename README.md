@@ -1,5 +1,6 @@
 ## 本技能提醒可以做什么
 * 显示本不应显示在地上的技能 (比如雷枪冲锋路径,光玉爆炸半径)
+* ![图片](https://user-images.githubusercontent.com/31427200/170696438-ec78dc68-0bbf-42c9-bf87-d1ce11ae0c4c.png)
 * 将自己该去的位置在屏幕上画出来
 * 一部分普通TTS功能
 
