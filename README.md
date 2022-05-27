@@ -2,6 +2,7 @@
 * 显示本不应显示在地上的技能 (比如雷枪冲锋路径,光玉爆炸半径)
 * ![图片](https://user-images.githubusercontent.com/31427200/170696438-ec78dc68-0bbf-42c9-bf87-d1ce11ae0c4c.png)
 * 将自己该去的位置在屏幕上画出来
+* ![图片](https://user-images.githubusercontent.com/31427200/170696636-5f7c606a-7794-4edb-9fd4-699a2c7bf5a2.png)
 * 一部分普通TTS功能
 
 ## 本技能提醒基于[Triggernometry](https://github.com/paissaheavyindustries/Triggernometry)编写
