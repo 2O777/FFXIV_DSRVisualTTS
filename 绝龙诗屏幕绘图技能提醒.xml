@@ -75,7 +75,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="true" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="初始化" Id="58d51aa4-e7f3-4dd1-8ed7-8b7ab8523da9" RegularExpression="^33\|[^|]*\|[^|]*\|400000(?&gt;03|10)\|">
                 <Actions>
@@ -138,7 +137,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="自动禁用" Id="3c23099f-2da7-48e6-b8a9-fec544608d6a" RegularExpression="^20\|[^\|]*\|[^\|]*\|[^\|]*\|63C8\|[^\|]*\|[^\|]*\|[^\|]*\|2.70\|">
                 <Actions>
@@ -152,7 +150,6 @@
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${var:isp2le}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
-                <Conditions />
               </Trigger>
             </Triggers>
           </Folder>
@@ -172,7 +169,6 @@
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Name="BOSS刷哪了" Id="6edc5e52-2d1a-4914-9a06-2cc9d42144bb" RegularExpression="^.{14} StartsCasting 14:.+?:62D4:.+?:3.70:(?&lt;p1ga100x&gt;[0-9]{2,3})\.00:(?&lt;p1ga100y&gt;[0-9]{2,3})\.00">
             <Actions>
@@ -202,7 +198,6 @@
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
         </Triggers>
       </Folder>
@@ -314,7 +309,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="塔刷哪了" Id="de36c063-eade-4f1a-8022-48b4114a29a8" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|63DF\|[^|]*\|E0000000\|*\|10.70*\|(?&lt;p2towerx&gt;[\.0-9]*)\|(?&lt;p2towery&gt;[\.0-9]*)\|">
                 <Actions>
@@ -465,7 +459,6 @@
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${var:P2TowerCount}" ExpressionTypeL="Numeric" ExpressionR="6" ExpressionTypeR="Numeric" ConditionType="NumericLessEqual" />
                 </Condition>
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="谁点了蓝标" Id="13061f51-386a-4073-bb6a-1c9f5657e48d" RegularExpression="^27\|[^|]*\|[^|]*\|(?&lt;P2LqName&gt;[^\|]*)\|[^|]*\|[^|]*\|(?&lt;P2LqID&gt;[A-Z0-9]{4})\|">
                 <Actions>
@@ -551,7 +544,6 @@
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${var:p2lqCount}" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericLessEqual" />
                 </Condition>
-                <Conditions />
               </Trigger>
               <Trigger Enabled="false" Source="FFXIVNetwork" Name="h1走位画图" Id="d6213368-8016-426b-ba45-93d31bc8bca1" RegularExpression="" DebugLevel="Verbose">
                 <Actions>
@@ -707,7 +699,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="false" Source="FFXIVNetwork" Name="h2走位画图" Id="0bf0fc26-8161-4a1b-8cc5-5ce2a62776de" RegularExpression="">
                 <Actions>
@@ -997,7 +988,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="地震范围" Id="9dfd7fcc-cba3-41b0-b0f6-3ad009c7aade" RegularExpression="^20\|[^\|]*\|(?&lt;EkObjID0&gt;[A-Z0-9]{8})\|[^|]*\|63D5\|[^|]*\|[^|]*\|[^|]*\|4.00\|">
                 <Actions>
@@ -1018,7 +1008,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="初始化" Id="d997b339-e556-412b-9c89-08cf39ba8863" RegularExpression="^33\|[^|]*\|[^|]*\|400000(?&gt;03|10)\|">
                 <Actions>
@@ -1066,7 +1055,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="false" Source="FFXIVNetwork" Name="d1走位画图" Id="ec7a7649-6777-4b4f-8791-714ac56ac0dc" RegularExpression="">
                 <Actions>
@@ -1474,7 +1462,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="false" Source="FFXIVNetwork" Name="d4走位画图" Id="62709d57-38f6-437a-8e01-f212222bc2bf" RegularExpression="" DebugLevel="Verbose">
                 <Actions>
@@ -1630,7 +1617,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="false" Source="FFXIVNetwork" Name="d3走位画图" Id="38b85934-6fb7-42f1-abeb-7f118a577158" RegularExpression="">
                 <Actions>
@@ -1920,7 +1906,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="false" Source="FFXIVNetwork" Name="d2走位画图" Id="a95157f0-aefb-4474-b27e-b450f8325dba" RegularExpression="">
                 <Actions>
@@ -2328,7 +2313,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
             </Triggers>
           </Folder>
@@ -2342,7 +2326,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="检查自身点的刀" Id="00c7c64b-e0c8-4c09-b6b9-6665cf42a817" RegularExpression="^27\|[^|]*\|[^|]*\|(?&lt;p2nfname&gt;[^\|]*)\|[^|]*\|[^|]*\|(?&lt;P2MajID91&gt;[A-Z0-9]{4})\|">
                 <Actions>
@@ -2363,7 +2346,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
             </Triggers>
           </Folder>
@@ -2589,7 +2571,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="false" Source="FFXIVNetwork" Name="D1-4组" Id="63c65e64-3a58-44df-bb85-82406978b4e8" RegularExpression="">
                 <Actions>
@@ -2810,7 +2791,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="谁点了陨石" Id="449bfa67-8abf-41bb-b1fb-e38db7a8f199" RegularExpression="^27\|[^|]*\|[^|]*\|(?&lt;P2ysName&gt;[^\|]*)\|[^|]*\|[^|]*\|(?&lt;P2ysID&gt;[A-Z0-9]{4})\|">
                 <Actions>
@@ -2889,7 +2869,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="初始化" Id="a71515e5-701a-4f3b-af24-1251f2194de8" RegularExpression="^33\|[^|]*\|[^|]*\|400000(?&gt;03|10)\|">
                 <Actions>
@@ -2985,7 +2964,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="塔刷哪了" Id="815d74f6-302c-4eb8-b378-c3712f072f26" RegularExpression="^20\|[^\|]*\|[^\|]*\|[^\|]*\|737C\|[^\|]*\|E0000000\|\|11.70\|(?&lt;p2towerx2&gt;[\.0-9]*)\|(?&lt;p2towery2&gt;[\.0-9]*)\|">
                 <Actions>
@@ -3164,7 +3142,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="false" Name="st走位画图" Id="8dbc1de5-33ec-412c-b223-531b2d08f82a" RegularExpression="">
                 <Actions>
@@ -3373,7 +3350,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="false" Name="d1走位画图" Id="b35ef472-a8bd-4dab-bda3-97423fef8489" RegularExpression="">
                 <Actions>
@@ -3583,7 +3559,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="false" Name="d3走位画图" Id="f5256609-fca3-4c85-92d9-5519ce5b4479" RegularExpression="">
                 <Actions>
@@ -3792,7 +3767,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="false" Name="mt走位画图" Id="3d90eb5d-970c-4e0f-ad10-2416fbb9d013" RegularExpression="">
                 <Actions>
@@ -4002,7 +3976,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="false" Name="d4走位画图" Id="554988b9-1ae2-4756-8366-37f12986f7b0" RegularExpression="">
                 <Actions>
@@ -4222,7 +4195,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="false" Name="h1走位画图" Id="c6d0fbbd-565d-4e95-af59-88356e7a1e7d" RegularExpression="">
                 <Actions>
@@ -4442,7 +4414,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="false" Name="h2走位画图" Id="0c8beb8f-9514-4db9-bf36-ccc3000c347d" RegularExpression="">
                 <Actions>
@@ -4662,7 +4633,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="false" Name="d2走位画图" Id="e31c3881-5177-4705-94f2-ea1e2029a3d6" RegularExpression="">
                 <Actions>
@@ -4882,7 +4852,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
             </Triggers>
           </Folder>
@@ -4892,48 +4861,6 @@
       <Folder Id="5bdc597c-9776-4c7c-8dde-b8ff658f92d9" Name="P3" Enabled="true">
         <Folders />
         <Triggers>
-          <Trigger Enabled="true" Source="FFXIVNetwork" Name="塔buff" Id="b3a61e0c-8587-4e8c-8301-9fd57f08f21d" RegularExpression="^26\|[^|]*\|AC(?&lt;p3id&gt;[0-9]{1})\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;name&gt;[^|]*)\|">
-            <Actions>
-              <Action OrderNumber="1" UseTTSTextExpression="脚下放塔" UseTTSRateExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="1000">
-                <Condition Enabled="true" Grouping="And">
-                  <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                  <ConditionSingle Enabled="true" ExpressionL="${p3id}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                </Condition>
-              </Action>
-              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mybuffst&amp;destroyAt=30000" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.0,&quot;overlayTextColor&quot;:4294967295,&quot;overlayFScale&quot;:2.5,&quot;thicc&quot;:0.0,&quot;overlayText&quot;:&quot;原地放塔&quot;,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" UseTTSTextExpression="脚下放塔" UseTTSRateExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson">
-                <Condition Enabled="true" Grouping="And">
-                  <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                  <ConditionSingle Enabled="true" ExpressionL="${p3id}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                </Condition>
-              </Action>
-              <Action OrderNumber="3" UseTTSTextExpression="面前放塔" UseTTSRateExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="1000">
-                <Condition Enabled="true" Grouping="And">
-                  <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                  <ConditionSingle Enabled="true" ExpressionL="${p3id}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                </Condition>
-              </Action>
-              <Action OrderNumber="4" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mybuffst&amp;destroyAt=30000" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.0,&quot;overlayTextColor&quot;:4294967295,&quot;overlayFScale&quot;:2.5,&quot;thicc&quot;:0.0,&quot;overlayText&quot;:&quot;面對放塔&quot;,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" UseTTSTextExpression="面前放塔" UseTTSRateExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson">
-                <Condition Enabled="true" Grouping="And">
-                  <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                  <ConditionSingle Enabled="true" ExpressionL="${p3id}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                </Condition>
-              </Action>
-              <Action OrderNumber="5" UseTTSTextExpression="背后放塔" UseTTSRateExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="1000">
-                <Condition Enabled="true" Grouping="And">
-                  <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                  <ConditionSingle Enabled="true" ExpressionL="${p3id}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                </Condition>
-              </Action>
-              <Action OrderNumber="6" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mybuffst&amp;destroyAt=30000" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.0,&quot;overlayTextColor&quot;:4294967295,&quot;overlayFScale&quot;:2.5,&quot;thicc&quot;:0.0,&quot;overlayText&quot;:&quot;背對放塔&quot;,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" UseTTSTextExpression="背后放塔" UseTTSRateExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson">
-                <Condition Enabled="true" Grouping="And">
-                  <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                  <ConditionSingle Enabled="true" ExpressionL="${p3id}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                </Condition>
-              </Action>
-            </Actions>
-            <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
-          </Trigger>
           <Trigger Enabled="true" Source="FFXIVNetwork" Name="分摊加钢铁或月环" Id="508494ec-470f-43db-8a43-3e2a90f5276e" RegularExpression="^20\|[^|]*\|[A-Z0-9]{8}\|[^|]*\|671(?&lt;p3inout&gt;[2-3]{1})\|">
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="分摊,钢铁,月环" UseTTSRateExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" Asynchronous="False">
@@ -4958,7 +4885,6 @@
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Source="FFXIVNetwork" Name="麻将" Id="3a87a68b-fe0f-4eaf-9d60-b798ece9afce" RegularExpression="^26\|[^|]*\|BB(?&lt;p3maj&gt;[A-Z]{1})\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;name&gt;[^|]*)\|">
             <Actions>
@@ -5000,6 +4926,83 @@
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Source="FFXIVNetwork" Name="塔buff" Id="5682a020-caed-4ccb-a90e-ecbfdbc38c28" RegularExpression="^26\|[^|]*\|AC(?&lt;p3id&gt;[0-9]{1})\|[^|]*\|(?&lt;p3bufftime&gt;[0-9]{1,2})\.00\|[^|]*\|\|[^|]*\|(?&lt;name&gt;[^|]*)\|">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="脚下放塔" UseTTSRateExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" Asynchronous="False">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${p3id}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="2" OBSEndPoint="" VariableOp="SetNumeric" VariableName="p3bufftimems" VariableExpression="${p3bufftime}*1000" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${p3id}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="3" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mybuffst&amp;destroyAt=${var:p3bufftimems}" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.0,&quot;overlayTextColor&quot;:4294967295,&quot;overlayFScale&quot;:2.5,&quot;thicc&quot;:0.0,&quot;overlayText&quot;:&quot;原地放塔&quot;,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" UseTTSTextExpression="脚下放塔" UseTTSRateExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" ExecutionDelayExpression="10" Asynchronous="False">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${p3id}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="4" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mybuffov&amp;destroyAt=${var:p3bufftimems}" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:5.5,&quot;color&quot;:855682815,&quot;overlayFScale&quot;:1.96,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;,&quot;includeRotation&quot;:true,&quot;Filled&quot;:true}" UseTTSTextExpression="脚下放塔" UseTTSRateExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" ExecutionDelayExpression="10" Asynchronous="False">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${p3id}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="5" UseTTSTextExpression="面前放塔" UseTTSRateExpression="2" UseTTSExclusive="False" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${p3id}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="6" OBSEndPoint="" VariableOp="SetNumeric" VariableName="p3bufftimems" VariableExpression="${p3bufftime}*1000" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${p3id}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="7" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mybuffst&amp;destroyAt=${var:p3bufftimems}" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.0,&quot;overlayTextColor&quot;:4294967295,&quot;overlayFScale&quot;:2.5,&quot;thicc&quot;:0.0,&quot;overlayText&quot;:&quot;面對放塔&quot;,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" UseTTSTextExpression="面前放塔" UseTTSRateExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" ExecutionDelayExpression="10" Asynchronous="False">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${p3id}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="8" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mybuffov&amp;destroyAt=${var:p3bufftimems}" JsonPayloadExpression="{&quot;type&quot;:1,&quot;offY&quot;:18.0,&quot;radius&quot;:5.5,&quot;color&quot;:855682815,&quot;overlayFScale&quot;:1.96,&quot;overlayText&quot;:&quot;前塔予估&quot;,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;,&quot;includeRotation&quot;:true,&quot;Filled&quot;:true}" UseTTSTextExpression="脚下放塔" UseTTSRateExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" ExecutionDelayExpression="10" Asynchronous="False">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${p3id}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="9" UseTTSTextExpression="背后放塔" UseTTSRateExpression="2" UseTTSExclusive="False" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${p3id}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="10" OBSEndPoint="" VariableOp="SetNumeric" VariableName="p3bufftimems" VariableExpression="${p3bufftime}*1000" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${p3id}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="11" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mybuffst&amp;destroyAt=${var:p3bufftimems}" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.0,&quot;overlayTextColor&quot;:4294967295,&quot;overlayFScale&quot;:2.5,&quot;thicc&quot;:0.0,&quot;overlayText&quot;:&quot;背對放塔&quot;,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" UseTTSTextExpression="背后放塔" UseTTSRateExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" ExecutionDelayExpression="10" Asynchronous="False">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${p3id}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="12" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mybuffov&amp;destroyAt=${var:p3bufftimems}" JsonPayloadExpression="{&quot;type&quot;:1,&quot;offY&quot;:-18.0,&quot;radius&quot;:5.5,&quot;color&quot;:855682815,&quot;overlayFScale&quot;:1.96,&quot;overlayText&quot;:&quot;后塔予估&quot;,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;,&quot;includeRotation&quot;:true,&quot;Filled&quot;:true}" UseTTSTextExpression="脚下放塔" UseTTSRateExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" ExecutionDelayExpression="10" Asynchronous="False">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${p3id}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
             <Conditions />
           </Trigger>
         </Triggers>
@@ -5016,7 +5019,6 @@
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Source="FFXIVNetwork" Name="蓝" Id="9d9ca23e-c284-4230-b5fd-a9c35ffd8ce8" RegularExpression="^26\|[^|]*\|AD8\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;name&gt;[^|]*)\|">
             <Actions>
@@ -5027,7 +5029,6 @@
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Source="FFXIVNetwork" Name="红" Id="15a14bab-317b-42da-9589-cd44b89ee50e" RegularExpression="^26\|[^|]*\|AD7\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;name&gt;[^|]*)\|">
             <Actions>
@@ -5038,7 +5039,6 @@
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
         </Triggers>
       </Folder>
@@ -5120,7 +5120,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="true" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="初始化" Id="6addf754-ee13-4955-944d-278f635b3bd3" RegularExpression="^33\|[^|]*\|[^|]*\|400000(?&gt;03|10)\|">
                     <Actions>
@@ -5129,7 +5128,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                 </Triggers>
               </Folder>
@@ -5147,7 +5145,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="玩家名初始化" Id="e409fdcc-f7a2-4769-93d9-6c61bcb163fb" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6B92">
                 <Actions>
@@ -5177,7 +5174,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Source="None" Sequential="True" Name="列出非死宣" Id="b34e9ced-a738-45d2-b92b-de2656c04188" RegularExpression="">
                 <Actions>
@@ -5220,7 +5216,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="分类" Id="9341e752-c67a-4988-a89e-22e748290964" RegularExpression="">
                 <Actions>
@@ -5246,7 +5241,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="播报" Id="085cbf60-82bb-44da-87eb-396bbe05363c" RegularExpression="">
                 <Actions>
@@ -5292,7 +5286,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="初始化" Id="9e007598-2f5d-4d51-ba7d-02b333ab3ea3" RegularExpression="^33\|[^|]*\|[^|]*\|400000(?&gt;03|10)\|">
                 <Actions>
@@ -5316,7 +5309,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
             </Triggers>
           </Folder>
@@ -5332,7 +5324,6 @@
           </Action>
         </Actions>
         <Condition Enabled="false" Grouping="Or" />
-        <Conditions />
       </Trigger>
       <Trigger Enabled="true" Source="FFXIVNetwork" Name="光玉搁哪呢" Id="57f58539-04be-4e3c-9011-abfe7c9b1334" RegularExpression="^03\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|\|4385\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|\|\|">
         <Actions>
@@ -5341,7 +5332,6 @@
           </Action>
         </Actions>
         <Condition Enabled="false" Grouping="Or" />
-        <Conditions />
       </Trigger>
       <Trigger Enabled="true" Source="FFXIVNetwork" Name="我优先级多少(在上方勾上自己的职能,在下方填写队伍中对应人的ID)" Id="aa6e1f0f-17ab-41a8-8dbe-f914cf5a6f1e" RegularExpression="^27\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;myidis&gt;[A-Z0-9]{4})\|">
         <Actions>
@@ -5400,7 +5390,6 @@
         <Condition Enabled="false" Grouping="Or">
           <ConditionSingle Enabled="true" ExpressionL="0" ExpressionTypeL="Numeric" ExpressionR="${var:h1ismy}+${var:h2ismy}+${var:stismy}+${var:mtismy}+${var:d1ismy}+${var:d2ismy}+${var:d3ismy}+${var:d4ismy}" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
         </Condition>
-        <Conditions />
       </Trigger>
       <Trigger Enabled="true" Name="击退" Id="bf2bd74e-7351-4986-bda7-04a12626a3b1" RegularExpression="^.{14} StartsCasting 14:.+?:62DC:">
         <Actions>
@@ -5409,7 +5398,6 @@
           </Action>
         </Actions>
         <Condition Enabled="false" Grouping="Or" />
-        <Conditions />
       </Trigger>
     </Triggers>
   </ExportedFolder>
