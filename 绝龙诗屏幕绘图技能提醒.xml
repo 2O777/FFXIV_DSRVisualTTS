@@ -4861,31 +4861,6 @@
       <Folder Id="5bdc597c-9776-4c7c-8dde-b8ff658f92d9" Name="P3" Enabled="true">
         <Folders />
         <Triggers>
-          <Trigger Enabled="true" Source="FFXIVNetwork" Name="分摊加钢铁或月环" Id="508494ec-470f-43db-8a43-3e2a90f5276e" RegularExpression="^20\|[^|]*\|[A-Z0-9]{8}\|[^|]*\|671(?&lt;p3inout&gt;[2-3]{1})\|">
-            <Actions>
-              <Action OrderNumber="1" UseTTSTextExpression="分摊,钢铁,月环" UseTTSRateExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" Asynchronous="False">
-                <Condition Enabled="true" Grouping="Or">
-                  <ConditionSingle Enabled="true" ExpressionL="${p3inout}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                </Condition>
-              </Action>
-              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=p3inorout&amp;destroyAt=15000" JsonPayloadExpression="{&quot;type&quot;:1,&quot;offZ&quot;:-1.0,&quot;radius&quot;:0.0,&quot;overlayTextColor&quot;:4294967295,&quot;overlayFScale&quot;:2.5,&quot;thicc&quot;:0.0,&quot;overlayText&quot;:&quot;分攤→鋼鐵→月環&quot;,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" UseTTSTextExpression="分摊,钢铁,月环" UseTTSRateExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False">
-                <Condition Enabled="true" Grouping="Or">
-                  <ConditionSingle Enabled="true" ExpressionL="${p3inout}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                </Condition>
-              </Action>
-              <Action OrderNumber="3" UseTTSTextExpression="分摊,月环,钢铁" UseTTSRateExpression="2" UseTTSExclusive="False" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                <Condition Enabled="true" Grouping="Or">
-                  <ConditionSingle Enabled="true" ExpressionL="${p3inout}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                </Condition>
-              </Action>
-              <Action OrderNumber="4" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=p3inorout&amp;destroyAt=15000" JsonPayloadExpression="{&quot;type&quot;:1,&quot;offZ&quot;:-1.0,&quot;radius&quot;:0.0,&quot;overlayTextColor&quot;:4294967295,&quot;overlayFScale&quot;:2.5,&quot;thicc&quot;:0.0,&quot;overlayText&quot;:&quot;分攤→月環→鋼鐵&quot;,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" UseTTSTextExpression="分摊,钢铁,月环" UseTTSRateExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False">
-                <Condition Enabled="true" Grouping="Or">
-                  <ConditionSingle Enabled="true" ExpressionL="${p3inout}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                </Condition>
-              </Action>
-            </Actions>
-            <Condition Enabled="false" Grouping="Or" />
-          </Trigger>
           <Trigger Enabled="true" Source="FFXIVNetwork" Name="麻将" Id="3a87a68b-fe0f-4eaf-9d60-b798ece9afce" RegularExpression="^26\|[^|]*\|BB(?&lt;p3maj&gt;[A-Z]{1})\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;name&gt;[^|]*)\|">
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="1号,踩2塔注意诱导" UseTTSRateExpression="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
@@ -4999,6 +4974,67 @@
                 <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                   <ConditionSingle Enabled="true" ExpressionL="${p3id}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Source="FFXIVNetwork" Name="记录尼德霍格ID" Id="4e7f6b90-f2ea-48e6-8a7f-6d3a5fd97daa" RegularExpression="^20\|[^|]*\|(?&lt;p3bossid&gt;[A-Z0-9]*)\|[^|]*\|670D[^|]*\|[^|]*\|[^|]*\|[^|]*\|4.70\|">
+            <Actions>
+              <Action OrderNumber="1" OBSEndPoint="" VariableOp="SetNumeric" VariableName="p3bossiddec" VariableExpression="hex2dec(${p3bossid})" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Source="FFXIVNetwork" Name="分摊加钢铁或月环" Id="8a6471d6-9db6-4eab-ad12-ed5a66942d60" RegularExpression="^20\|[^|]*\|[A-Z0-9]{8}\|[^|]*\|671(?&lt;p3inout&gt;[2-3]{1})\|">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="分摊,钢铁,月环" UseTTSRateExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" Asynchronous="False">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${p3inout}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=p3inorout&amp;destroyAt=15000" JsonPayloadExpression="{&quot;type&quot;:1,&quot;offZ&quot;:-1.0,&quot;radius&quot;:0.0,&quot;overlayTextColor&quot;:4294967295,&quot;overlayFScale&quot;:2.5,&quot;thicc&quot;:0.0,&quot;overlayText&quot;:&quot;分攤→鋼鐵→月環&quot;,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" UseTTSTextExpression="分摊,钢铁,月环" UseTTSRateExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${p3inout}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="3" UseTTSTextExpression="分摊,月环,钢铁" UseTTSRateExpression="2" UseTTSExclusive="False" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${p3inout}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="4" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=p3inorout&amp;destroyAt=15000" JsonPayloadExpression="{&quot;type&quot;:1,&quot;offZ&quot;:-1.0,&quot;radius&quot;:0.0,&quot;overlayTextColor&quot;:4294967295,&quot;overlayFScale&quot;:2.5,&quot;thicc&quot;:0.0,&quot;overlayText&quot;:&quot;分攤→月環→鋼鐵&quot;,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" UseTTSTextExpression="分摊,钢铁,月环" UseTTSRateExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${p3inout}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="5" OBSEndPoint="" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Placeholder" ExecutionDelayExpression="8000" Asynchronous="False">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="6" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=p3out&amp;destroyAt=5000" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:9.0,&quot;color&quot;:1677783295,&quot;overlayFScale&quot;:1.96,&quot;refActorObjectID&quot;:${var:p3bossiddec},&quot;includeRotation&quot;:true,&quot;Filled&quot;:true}" UseTTSTextExpression="分摊,钢铁,月环" UseTTSRateExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${p3inout}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="7" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=p3out&amp;destroyAt=5000" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:9.0,&quot;color&quot;:4278255606,&quot;thicc&quot;:50.0,&quot;refActorObjectID&quot;:${var:p3bossiddec},&quot;includeRotation&quot;:true}" UseTTSTextExpression="分摊,钢铁,月环" UseTTSRateExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${p3inout}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="8" OBSEndPoint="" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Placeholder" ExecutionDelayExpression="5000" Asynchronous="False">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="9" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=p3out&amp;destroyAt=3000" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:9.0,&quot;color&quot;:4278255606,&quot;thicc&quot;:50.0,&quot;refActorObjectID&quot;:${var:p3bossiddec},&quot;includeRotation&quot;:true}" UseTTSTextExpression="分摊,钢铁,月环" UseTTSRateExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${p3inout}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="10" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=p3out&amp;destroyAt=3000" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:9.0,&quot;color&quot;:1677783295,&quot;overlayFScale&quot;:1.96,&quot;refActorObjectID&quot;:${var:p3bossiddec},&quot;includeRotation&quot;:true,&quot;Filled&quot;:true}" UseTTSTextExpression="分摊,钢铁,月环" UseTTSRateExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${p3inout}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                 </Condition>
               </Action>
             </Actions>
