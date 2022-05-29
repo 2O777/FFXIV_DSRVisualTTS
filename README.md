@@ -15,7 +15,7 @@
 * 一部分普通TTS功能
 
 ## 本技能提醒基于[Triggernometry](https://github.com/paissaheavyindustries/Triggernometry)编写
-* **不支持整合版内自带的高级触发器(因为版本老旧不支持新语法)**
+* **建议使用官方版TRN,整合版内的旧版本可能会无法导入或工作不正常**
 
 ## 本技能提醒需要卫月插件[Splatoon](https://github.com/Eternita-S/Splatoon)
 * **请务必按照上述链接前往安装**
