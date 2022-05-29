@@ -989,7 +989,7 @@
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="地震范围" Id="9dfd7fcc-cba3-41b0-b0f6-3ad009c7aade" RegularExpression="^20\|[^\|]*\|(?&lt;EkObjID0&gt;[A-Z0-9]{8})\|[^|]*\|63D5\|[^|]*\|[^|]*\|[^|]*\|4.00\|">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="地震范围" Id="9dfd7fcc-cba3-41b0-b0f6-3ad009c7aade" RegularExpression="^20\|[^\|]*\|(?&lt;EkObjID0&gt;[A-Z0-9]{8})\|[^|]*\|63D5\|[^|]*\|[^|]*\|[^|]*\|4\.[^|]*\|">
                 <Actions>
                   <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="EkObjID" VariableExpression="hex2dec(${EkObjID0})" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
                     <Condition Enabled="false" Grouping="Or" />
@@ -2792,357 +2792,6 @@
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="谁点了陨石" Id="449bfa67-8abf-41bb-b1fb-e38db7a8f199" RegularExpression="^27\|[^|]*\|[^|]*\|(?&lt;P2ysName&gt;[^\|]*)\|[^|]*\|[^|]*\|(?&lt;P2ysID&gt;[A-Z0-9]{4})\|">
-                <Actions>
-                  <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="P2ysIDR" VariableExpression="(hex2dec(${P2ysID})-${var:ColorHeadMarkOffset})+18" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" ExecutionDelayExpression="10" RefireRequeue="False">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="p2ysmt" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="20">
-                    <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${var:P2ysIDR}" ExpressionTypeL="Numeric" ExpressionR="20" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                      <ConditionSingle Enabled="true" ExpressionL="${P2ysName}" ExpressionTypeL="String" ExpressionR="${var:exCirMTName}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="3" VariableOp="SetNumeric" VariableName="p2ysst" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="20">
-                    <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${var:P2ysIDR}" ExpressionTypeL="Numeric" ExpressionR="20" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                      <ConditionSingle Enabled="true" ExpressionL="${P2ysName}" ExpressionTypeL="String" ExpressionR="${var:exCirSTName}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="4" VariableOp="SetNumeric" VariableName="p2ysh1" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="20">
-                    <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${var:P2ysIDR}" ExpressionTypeL="Numeric" ExpressionR="20" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                      <ConditionSingle Enabled="true" ExpressionL="${P2ysName}" ExpressionTypeL="String" ExpressionR="${var:exCirH1Name}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="5" VariableOp="SetNumeric" VariableName="p2ysh2" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="20">
-                    <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${var:P2ysIDR}" ExpressionTypeL="Numeric" ExpressionR="20" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                      <ConditionSingle Enabled="true" ExpressionL="${P2ysName}" ExpressionTypeL="String" ExpressionR="${var:exCirH2Name}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="6" VariableOp="SetNumeric" VariableName="p2ysd1" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="20">
-                    <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${var:P2ysIDR}" ExpressionTypeL="Numeric" ExpressionR="20" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                      <ConditionSingle Enabled="true" ExpressionL="${P2ysName}" ExpressionTypeL="String" ExpressionR="${var:exCirD1Name}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="7" VariableOp="SetNumeric" VariableName="p2ysd2" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="20">
-                    <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${var:P2ysIDR}" ExpressionTypeL="Numeric" ExpressionR="20" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                      <ConditionSingle Enabled="true" ExpressionL="${P2ysName}" ExpressionTypeL="String" ExpressionR="${var:exCirD2Name}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="8" VariableOp="SetNumeric" VariableName="p2ysd3" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="20">
-                    <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${var:P2ysIDR}" ExpressionTypeL="Numeric" ExpressionR="20" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                      <ConditionSingle Enabled="true" ExpressionL="${P2ysName}" ExpressionTypeL="String" ExpressionR="${var:exCirD3Name}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="9" VariableOp="SetNumeric" VariableName="p2ysd4" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="20">
-                    <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${var:P2ysIDR}" ExpressionTypeL="Numeric" ExpressionR="20" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                      <ConditionSingle Enabled="true" ExpressionL="${P2ysName}" ExpressionTypeL="String" ExpressionR="${var:exCirD4Name}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="10" VariableOp="SetString" VariableName="P2Aer" VariableExpression="TN" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerForce="regexp,active" ActionType="Variable" ExecutionDelayExpression="50" Asynchronous="False">
-                    <Condition Enabled="true" Grouping="Or">
-                      <ConditionSingle Enabled="true" ExpressionL="${var:p2ysmt}+${var:p2ysh1}+${var:p2ysst}+${var:p2ysh2}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="11" VariableOp="SetString" VariableName="P2Aer" VariableExpression="DPS" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerForce="regexp,active" ActionType="Variable" ExecutionDelayExpression="50" Asynchronous="False">
-                    <Condition Enabled="true" Grouping="Or">
-                      <ConditionSingle Enabled="true" ExpressionL="${var:p2ysd1}+${var:p2ysd2}+${var:p2ysd3}+${var:p2ysd4}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="12" UseTTSTextExpression="点了替奶" UseTTSRateExpression="2" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="f7983bf2-8421-4f1c-9de9-8efb8ecce7e8" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="30">
-                    <Condition Enabled="true" Grouping="Or">
-                      <ConditionSingle Enabled="true" ExpressionL="${var:p2ysmt}+${var:p2ysh1}+${var:p2ysst}+${var:p2ysh2}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                      <ConditionSingle Enabled="true" ExpressionL="${var:p2ysd1}+${var:p2ysd2}+${var:p2ysd3}+${var:p2ysd4}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="13" UseTTSTextExpression="点了第屁S" UseTTSRateExpression="2" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="63c65e64-3a58-44df-bb85-82406978b4e8" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="30">
-                    <Condition Enabled="true" Grouping="Or">
-                      <ConditionSingle Enabled="true" ExpressionL="${var:p2ysd1}+${var:p2ysd2}+${var:p2ysd3}+${var:p2ysd4}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                      <ConditionSingle Enabled="true" ExpressionL="${var:p2ysmt}+${var:p2ysh1}+${var:p2ysst}+${var:p2ysh2}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                    </Condition>
-                  </Action>
-                </Actions>
-                <Condition Enabled="false" Grouping="Or" />
-              </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="初始化" Id="a71515e5-701a-4f3b-af24-1251f2194de8" RegularExpression="^33\|[^|]*\|[^|]*\|400000(?&gt;03|10)\|">
-                <Actions>
-                  <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="p2ysmt" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="p2ysst" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="3" VariableOp="SetNumeric" VariableName="p2ysh1" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="4" VariableOp="SetNumeric" VariableName="p2ysh2" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="5" VariableOp="SetNumeric" VariableName="p2ysd1" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="6" VariableOp="SetNumeric" VariableName="p2ysd2" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="7" VariableOp="SetNumeric" VariableName="p2ysd3" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="8" VariableOp="SetNumeric" VariableName="p2ysd4" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="9" VariableOp="SetNumeric" VariableName="p2a0tower" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="10" VariableOp="SetNumeric" VariableName="p2a1tower" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="11" VariableOp="SetNumeric" VariableName="p2a2tower" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="12" VariableOp="SetNumeric" VariableName="p2a3tower" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="13" VariableOp="SetNumeric" VariableName="p2b0tower" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="14" VariableOp="SetNumeric" VariableName="p2b1tower" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="15" VariableOp="SetNumeric" VariableName="p2b2tower" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="16" VariableOp="SetNumeric" VariableName="p2b3tower" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="17" VariableOp="SetNumeric" VariableName="p2c0tower" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="18" VariableOp="SetNumeric" VariableName="p2c1tower" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="19" VariableOp="SetNumeric" VariableName="p2c2tower" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="20" VariableOp="SetNumeric" VariableName="p2c3tower" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="21" VariableOp="SetNumeric" VariableName="p2d0tower" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="22" VariableOp="SetNumeric" VariableName="p2d1tower" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="23" VariableOp="SetNumeric" VariableName="p2d2tower" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="24" VariableOp="SetNumeric" VariableName="p2d3tower" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="25" VariableOp="SetNumeric" VariableName="p2d4tower" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="26" VariableName="p2aotowerType" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="27" VariableName="p2botowerType" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="28" VariableName="p2cotowerType" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="29" VariableName="p2dotowerType" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="30" VariableName="P2AerTowerCount" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                </Actions>
-                <Condition Enabled="false" Grouping="Or" />
-              </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="塔刷哪了" Id="815d74f6-302c-4eb8-b378-c3712f072f26" RegularExpression="^20\|[^\|]*\|[^\|]*\|[^\|]*\|737C\|[^\|]*\|E0000000\|\|11.70\|(?&lt;p2towerx2&gt;[\.0-9]*)\|(?&lt;p2towery2&gt;[\.0-9]*)\|">
-                <Actions>
-                  <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="P2AerTowerCount" VariableExpression="${var:P2AerTowerCount}+1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="p2a0tower" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${p2towerx2}" ExpressionTypeL="String" ExpressionR="104.24" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                      <ConditionSingle Enabled="true" ExpressionL="${p2towery2}" ExpressionTypeL="String" ExpressionR="95.76" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="3" VariableOp="SetNumeric" VariableName="p2a1tower" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${p2towerx2}" ExpressionTypeL="String" ExpressionR="91.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                      <ConditionSingle Enabled="true" ExpressionL="${p2towery2}" ExpressionTypeL="String" ExpressionR="84.41" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="4" VariableOp="SetNumeric" VariableName="p2a2tower" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${p2towerx2}" ExpressionTypeL="String" ExpressionR="100.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                      <ConditionSingle Enabled="true" ExpressionL="${p2towery2}" ExpressionTypeL="String" ExpressionR="82.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="5" VariableOp="SetNumeric" VariableName="p2a3tower" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${p2towerx2}" ExpressionTypeL="String" ExpressionR="109.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                      <ConditionSingle Enabled="true" ExpressionL="${p2towery2}" ExpressionTypeL="String" ExpressionR="84.41" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="6" VariableOp="SetNumeric" VariableName="p2b0tower" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${p2towerx2}" ExpressionTypeL="String" ExpressionR="104.24" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                      <ConditionSingle Enabled="true" ExpressionL="${p2towery2}" ExpressionTypeL="String" ExpressionR="104.24" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="7" VariableOp="SetNumeric" VariableName="p2b1tower" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${p2towerx2}" ExpressionTypeL="String" ExpressionR="115.59" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                      <ConditionSingle Enabled="true" ExpressionL="${p2towery2}" ExpressionTypeL="String" ExpressionR="91.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="8" VariableOp="SetNumeric" VariableName="p2b2tower" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${p2towerx2}" ExpressionTypeL="String" ExpressionR="118.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                      <ConditionSingle Enabled="true" ExpressionL="${p2towery2}" ExpressionTypeL="String" ExpressionR="100.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="9" VariableOp="SetNumeric" VariableName="p2b3tower" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${p2towerx2}" ExpressionTypeL="String" ExpressionR="115.59" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                      <ConditionSingle Enabled="true" ExpressionL="${p2towery2}" ExpressionTypeL="String" ExpressionR="109.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="10" VariableOp="SetNumeric" VariableName="p2c0tower" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${p2towerx2}" ExpressionTypeL="String" ExpressionR="95.76" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                      <ConditionSingle Enabled="true" ExpressionL="${p2towery2}" ExpressionTypeL="String" ExpressionR="104.24" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="11" VariableOp="SetNumeric" VariableName="p2c1tower" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${p2towerx2}" ExpressionTypeL="String" ExpressionR="109.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                      <ConditionSingle Enabled="true" ExpressionL="${p2towery2}" ExpressionTypeL="String" ExpressionR="115.59" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="12" VariableOp="SetNumeric" VariableName="p2c2tower" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${p2towerx2}" ExpressionTypeL="String" ExpressionR="100.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                      <ConditionSingle Enabled="true" ExpressionL="${p2towery2}" ExpressionTypeL="String" ExpressionR="118.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="13" VariableOp="SetNumeric" VariableName="p2c3tower" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${p2towerx2}" ExpressionTypeL="String" ExpressionR="91.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                      <ConditionSingle Enabled="true" ExpressionL="${p2towery2}" ExpressionTypeL="String" ExpressionR="115.59" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="14" VariableOp="SetNumeric" VariableName="p2d0tower" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${p2towerx2}" ExpressionTypeL="String" ExpressionR="95.76" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                      <ConditionSingle Enabled="true" ExpressionL="${p2towery2}" ExpressionTypeL="String" ExpressionR="95.76" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="15" VariableOp="SetNumeric" VariableName="p2d1tower" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${p2towerx2}" ExpressionTypeL="String" ExpressionR="84.41" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                      <ConditionSingle Enabled="true" ExpressionL="${p2towery2}" ExpressionTypeL="String" ExpressionR="109.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="16" VariableOp="SetNumeric" VariableName="p2d2tower" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${p2towerx2}" ExpressionTypeL="String" ExpressionR="82.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                      <ConditionSingle Enabled="true" ExpressionL="${p2towery2}" ExpressionTypeL="String" ExpressionR="100.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="17" VariableOp="SetNumeric" VariableName="p2d3tower" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                    <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${p2towerx2}" ExpressionTypeL="String" ExpressionR="84.41" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                      <ConditionSingle Enabled="true" ExpressionL="${p2towery2}" ExpressionTypeL="String" ExpressionR="91.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="18" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Placeholder">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="19" VariableOp="SetNumeric" VariableName="p2aotowerType" VariableExpression="${var:p2a1tower}+${var:p2a2tower}+${var:p2a3tower}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="50" Asynchronous="False">
-                    <Condition Enabled="true" Grouping="Or">
-                      <ConditionSingle Enabled="true" ExpressionL="${var:P2AerTowerCount}" ExpressionTypeL="Numeric" ExpressionR="8" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="20" VariableOp="SetNumeric" VariableName="p2botowerType" VariableExpression="${var:p2b1tower}+${var:p2b2tower}+${var:p2b3tower}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="10" Asynchronous="False">
-                    <Condition Enabled="true" Grouping="Or">
-                      <ConditionSingle Enabled="true" ExpressionL="${var:P2AerTowerCount}" ExpressionTypeL="Numeric" ExpressionR="8" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="21" VariableOp="SetNumeric" VariableName="p2cotowerType" VariableExpression="${var:p2c1tower}+${var:p2c2tower}+${var:p2c3tower}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="10" Asynchronous="False">
-                    <Condition Enabled="true" Grouping="Or">
-                      <ConditionSingle Enabled="true" ExpressionL="${var:P2AerTowerCount}" ExpressionTypeL="Numeric" ExpressionR="8" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="22" VariableOp="SetNumeric" VariableName="p2dotowerType" VariableExpression="${var:p2d1tower}+${var:p2d2tower}+${var:p2d3tower}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="10" Asynchronous="False">
-                    <Condition Enabled="true" Grouping="Or">
-                      <ConditionSingle Enabled="true" ExpressionL="${var:P2AerTowerCount}" ExpressionTypeL="Numeric" ExpressionR="8" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="23" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerForce="regexp,active" ActionType="Placeholder" ExecutionDelayExpression="150" Asynchronous="False">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="24" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="3d90eb5d-970c-4e0f-ad10-2416fbb9d013" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="10" Asynchronous="False">
-                    <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${var:mtismy}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                      <ConditionSingle Enabled="true" ExpressionL="${var:P2AerTowerCount}" ExpressionTypeL="Numeric" ExpressionR="8" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="25" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="8dbc1de5-33ec-412c-b223-531b2d08f82a" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="10" Asynchronous="False">
-                    <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${var:stismy}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                      <ConditionSingle Enabled="true" ExpressionL="${var:P2AerTowerCount}" ExpressionTypeL="Numeric" ExpressionR="8" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="26" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="c6d0fbbd-565d-4e95-af59-88356e7a1e7d" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="10" Asynchronous="False">
-                    <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${var:h1ismy}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                      <ConditionSingle Enabled="true" ExpressionL="${var:P2AerTowerCount}" ExpressionTypeL="Numeric" ExpressionR="8" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="27" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="0c8beb8f-9514-4db9-bf36-ccc3000c347d" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="10" Asynchronous="False">
-                    <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${var:h2ismy}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                      <ConditionSingle Enabled="true" ExpressionL="${var:P2AerTowerCount}" ExpressionTypeL="Numeric" ExpressionR="8" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="28" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="b35ef472-a8bd-4dab-bda3-97423fef8489" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="10" Asynchronous="False">
-                    <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${var:d1ismy}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                      <ConditionSingle Enabled="true" ExpressionL="${var:P2AerTowerCount}" ExpressionTypeL="Numeric" ExpressionR="8" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="29" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="e31c3881-5177-4705-94f2-ea1e2029a3d6" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="10" Asynchronous="False">
-                    <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${var:d2ismy}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                      <ConditionSingle Enabled="true" ExpressionL="${var:P2AerTowerCount}" ExpressionTypeL="Numeric" ExpressionR="8" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="30" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="f5256609-fca3-4c85-92d9-5519ce5b4479" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="10" Asynchronous="False">
-                    <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${var:d3ismy}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                      <ConditionSingle Enabled="true" ExpressionL="${var:P2AerTowerCount}" ExpressionTypeL="Numeric" ExpressionR="8" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="31" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="554988b9-1ae2-4756-8366-37f12986f7b0" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="10" Asynchronous="False">
-                    <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${var:d4ismy}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                      <ConditionSingle Enabled="true" ExpressionL="${var:P2AerTowerCount}" ExpressionTypeL="Numeric" ExpressionR="8" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                    </Condition>
-                  </Action>
-                </Actions>
-                <Condition Enabled="false" Grouping="Or" />
-              </Trigger>
               <Trigger Enabled="false" Name="st走位画图" Id="8dbc1de5-33ec-412c-b223-531b2d08f82a" RegularExpression="">
                 <Actions>
                   <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=p2mystep1&amp;destroyAt=5000" JsonPayloadExpression="{&quot;refX&quot;:100.0,&quot;refY&quot;:111.0,&quot;color&quot;:4278255606,&quot;thicc&quot;:3.0,&quot;refActorDataID&quot;:13728,&quot;refActorComparisonType&quot;:3,&quot;tether&quot;:true}" UseTTSVolumeExpression="" UseTTSRateExpression="" VariableOp="SetNumeric" VariableName="p2ysh2" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" RefireRequeue="False">
@@ -4853,10 +4502,396 @@
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="初始化" Id="01d24d74-ef51-47be-94f5-c35342396bb5" RegularExpression="^33\|[^|]*\|[^|]*\|400000(?&gt;03|10)\|">
+                <Actions>
+                  <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="p2ysmt" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="p2ysst" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="3" VariableOp="SetNumeric" VariableName="p2ysh1" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="4" VariableOp="SetNumeric" VariableName="p2ysh2" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="5" VariableOp="SetNumeric" VariableName="p2ysd1" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="6" VariableOp="SetNumeric" VariableName="p2ysd2" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="7" VariableOp="SetNumeric" VariableName="p2ysd3" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="8" VariableOp="SetNumeric" VariableName="p2ysd4" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="9" VariableOp="SetNumeric" VariableName="p2a0tower" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="10" VariableOp="SetNumeric" VariableName="p2a1tower" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="11" VariableOp="SetNumeric" VariableName="p2a2tower" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="12" VariableOp="SetNumeric" VariableName="p2a3tower" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="13" VariableOp="SetNumeric" VariableName="p2b0tower" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="14" VariableOp="SetNumeric" VariableName="p2b1tower" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="15" VariableOp="SetNumeric" VariableName="p2b2tower" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="16" VariableOp="SetNumeric" VariableName="p2b3tower" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="17" VariableOp="SetNumeric" VariableName="p2c0tower" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="18" VariableOp="SetNumeric" VariableName="p2c1tower" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="19" VariableOp="SetNumeric" VariableName="p2c2tower" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="20" VariableOp="SetNumeric" VariableName="p2c3tower" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="21" VariableOp="SetNumeric" VariableName="p2d0tower" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="22" VariableOp="SetNumeric" VariableName="p2d1tower" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="23" VariableOp="SetNumeric" VariableName="p2d2tower" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="24" VariableOp="SetNumeric" VariableName="p2d3tower" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="25" VariableOp="SetNumeric" VariableName="p2d4tower" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="26" VariableName="p2aotowerType" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="27" VariableName="p2botowerType" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="28" VariableName="p2cotowerType" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="29" VariableName="p2dotowerType" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="30" VariableName="P2AerTowerCount" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="31" OBSEndPoint="" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="EnableTrigger" TriggerId="304e5791-c004-4dd7-9cfc-0523a76cd4fc" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="32" OBSEndPoint="" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="EnableTrigger" TriggerId="f70a25fb-6b4a-4261-ad5a-839ed712ffd3" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="谁点了陨石" Id="304e5791-c004-4dd7-9cfc-0523a76cd4fc" RegularExpression="^27\|[^|]*\|[^|]*\|(?&lt;P2ysName&gt;[^\|]*)\|[^|]*\|[^|]*\|(?&lt;P2ysID&gt;[A-Z0-9]{4})\|">
+                <Actions>
+                  <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="P2ysIDR" VariableExpression="(hex2dec(${P2ysID})-${var:ColorHeadMarkOffset})+18" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" ExecutionDelayExpression="10" RefireRequeue="False">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="p2ysmt" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="20">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:P2ysIDR}" ExpressionTypeL="Numeric" ExpressionR="20" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${P2ysName}" ExpressionTypeL="String" ExpressionR="${var:exCirMTName}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="3" VariableOp="SetNumeric" VariableName="p2ysst" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="20">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:P2ysIDR}" ExpressionTypeL="Numeric" ExpressionR="20" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${P2ysName}" ExpressionTypeL="String" ExpressionR="${var:exCirSTName}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="4" VariableOp="SetNumeric" VariableName="p2ysh1" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="20">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:P2ysIDR}" ExpressionTypeL="Numeric" ExpressionR="20" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${P2ysName}" ExpressionTypeL="String" ExpressionR="${var:exCirH1Name}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="5" VariableOp="SetNumeric" VariableName="p2ysh2" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="20">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:P2ysIDR}" ExpressionTypeL="Numeric" ExpressionR="20" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${P2ysName}" ExpressionTypeL="String" ExpressionR="${var:exCirH2Name}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="6" VariableOp="SetNumeric" VariableName="p2ysd1" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="20">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:P2ysIDR}" ExpressionTypeL="Numeric" ExpressionR="20" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${P2ysName}" ExpressionTypeL="String" ExpressionR="${var:exCirD1Name}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="7" VariableOp="SetNumeric" VariableName="p2ysd2" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="20">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:P2ysIDR}" ExpressionTypeL="Numeric" ExpressionR="20" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${P2ysName}" ExpressionTypeL="String" ExpressionR="${var:exCirD2Name}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="8" VariableOp="SetNumeric" VariableName="p2ysd3" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="20">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:P2ysIDR}" ExpressionTypeL="Numeric" ExpressionR="20" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${P2ysName}" ExpressionTypeL="String" ExpressionR="${var:exCirD3Name}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="9" VariableOp="SetNumeric" VariableName="p2ysd4" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="20">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:P2ysIDR}" ExpressionTypeL="Numeric" ExpressionR="20" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${P2ysName}" ExpressionTypeL="String" ExpressionR="${var:exCirD4Name}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="10" VariableOp="SetString" VariableName="P2Aer" VariableExpression="TN" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerForce="regexp,active" ActionType="Variable" ExecutionDelayExpression="50" Asynchronous="False">
+                    <Condition Enabled="true" Grouping="Or">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:p2ysmt}+${var:p2ysh1}+${var:p2ysst}+${var:p2ysh2}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="11" VariableOp="SetString" VariableName="P2Aer" VariableExpression="DPS" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerForce="regexp,active" ActionType="Variable" ExecutionDelayExpression="50" Asynchronous="False">
+                    <Condition Enabled="true" Grouping="Or">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:p2ysd1}+${var:p2ysd2}+${var:p2ysd3}+${var:p2ysd4}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="12" UseTTSTextExpression="点了替奶" UseTTSRateExpression="2" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="a499cdd4-3559-4443-99ac-60e3517b8f11" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="30">
+                    <Condition Enabled="true" Grouping="Or">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:p2ysmt}+${var:p2ysh1}+${var:p2ysst}+${var:p2ysh2}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:p2ysd1}+${var:p2ysd2}+${var:p2ysd3}+${var:p2ysd4}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="13" UseTTSTextExpression="点了第屁S" UseTTSRateExpression="2" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="629a09b6-54c9-4809-9efa-d5a2444c0012" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="30">
+                    <Condition Enabled="true" Grouping="Or">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:p2ysd1}+${var:p2ysd2}+${var:p2ysd3}+${var:p2ysd4}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:p2ysmt}+${var:p2ysh1}+${var:p2ysst}+${var:p2ysh2}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="14" UseTTSTextExpression="点了第屁S" UseTTSRateExpression="2" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="DisableTrigger" TriggerId="304e5791-c004-4dd7-9cfc-0523a76cd4fc" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="500" Asynchronous="False">
+                    <Condition Enabled="true" Grouping="Or">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:p2ysd1}+${var:p2ysd2}+${var:p2ysd3}+${var:p2ysd4}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:p2ysmt}+${var:p2ysh1}+${var:p2ysst}+${var:p2ysh2}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="15" UseTTSTextExpression="点了第屁S" UseTTSRateExpression="2" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="DisableTrigger" TriggerId="f70a25fb-6b4a-4261-ad5a-839ed712ffd3" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="500" Asynchronous="False">
+                    <Condition Enabled="true" Grouping="Or">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:p2ysd1}+${var:p2ysd2}+${var:p2ysd3}+${var:p2ysd4}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:p2ysmt}+${var:p2ysh1}+${var:p2ysst}+${var:p2ysh2}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="塔刷哪了" Id="f70a25fb-6b4a-4261-ad5a-839ed712ffd3" RegularExpression="^20\|[^\|]*\|[^\|]*\|[^\|]*\|737C\|[^\|]*\|E0000000\|\|11.70*\|(?&lt;p2towerx2&gt;[\.0-9]*)\|(?&lt;p2towery2&gt;[\.0-9]*)\|">
+                <Actions>
+                  <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="P2AerTowerCount" VariableExpression="${var:P2AerTowerCount}+1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="p2a0tower" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${p2towerx2}" ExpressionTypeL="String" ExpressionR="104.24" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${p2towery2}" ExpressionTypeL="String" ExpressionR="95.76" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="3" VariableOp="SetNumeric" VariableName="p2a1tower" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${p2towerx2}" ExpressionTypeL="String" ExpressionR="91.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${p2towery2}" ExpressionTypeL="String" ExpressionR="84.41" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="4" VariableOp="SetNumeric" VariableName="p2a2tower" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${p2towerx2}" ExpressionTypeL="String" ExpressionR="100.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${p2towery2}" ExpressionTypeL="String" ExpressionR="82.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="5" VariableOp="SetNumeric" VariableName="p2a3tower" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${p2towerx2}" ExpressionTypeL="String" ExpressionR="109.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${p2towery2}" ExpressionTypeL="String" ExpressionR="84.41" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="6" VariableOp="SetNumeric" VariableName="p2b0tower" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${p2towerx2}" ExpressionTypeL="String" ExpressionR="104.24" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${p2towery2}" ExpressionTypeL="String" ExpressionR="104.24" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="7" VariableOp="SetNumeric" VariableName="p2b1tower" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${p2towerx2}" ExpressionTypeL="String" ExpressionR="115.59" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${p2towery2}" ExpressionTypeL="String" ExpressionR="91.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="8" VariableOp="SetNumeric" VariableName="p2b2tower" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${p2towerx2}" ExpressionTypeL="String" ExpressionR="118.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${p2towery2}" ExpressionTypeL="String" ExpressionR="100.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="9" VariableOp="SetNumeric" VariableName="p2b3tower" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${p2towerx2}" ExpressionTypeL="String" ExpressionR="115.59" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${p2towery2}" ExpressionTypeL="String" ExpressionR="109.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="10" VariableOp="SetNumeric" VariableName="p2c0tower" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${p2towerx2}" ExpressionTypeL="String" ExpressionR="95.76" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${p2towery2}" ExpressionTypeL="String" ExpressionR="104.24" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="11" VariableOp="SetNumeric" VariableName="p2c1tower" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${p2towerx2}" ExpressionTypeL="String" ExpressionR="109.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${p2towery2}" ExpressionTypeL="String" ExpressionR="115.59" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="12" VariableOp="SetNumeric" VariableName="p2c2tower" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${p2towerx2}" ExpressionTypeL="String" ExpressionR="100.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${p2towery2}" ExpressionTypeL="String" ExpressionR="118.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="13" VariableOp="SetNumeric" VariableName="p2c3tower" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${p2towerx2}" ExpressionTypeL="String" ExpressionR="91.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${p2towery2}" ExpressionTypeL="String" ExpressionR="115.59" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="14" VariableOp="SetNumeric" VariableName="p2d0tower" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${p2towerx2}" ExpressionTypeL="String" ExpressionR="95.76" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${p2towery2}" ExpressionTypeL="String" ExpressionR="95.76" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="15" VariableOp="SetNumeric" VariableName="p2d1tower" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${p2towerx2}" ExpressionTypeL="String" ExpressionR="84.41" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${p2towery2}" ExpressionTypeL="String" ExpressionR="109.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="16" VariableOp="SetNumeric" VariableName="p2d2tower" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${p2towerx2}" ExpressionTypeL="String" ExpressionR="82.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${p2towery2}" ExpressionTypeL="String" ExpressionR="100.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="17" VariableOp="SetNumeric" VariableName="p2d3tower" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${p2towerx2}" ExpressionTypeL="String" ExpressionR="84.41" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${p2towery2}" ExpressionTypeL="String" ExpressionR="91.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="18" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Placeholder">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="19" VariableOp="SetNumeric" VariableName="p2aotowerType" VariableExpression="${var:p2a1tower}+${var:p2a2tower}+${var:p2a3tower}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="50" Asynchronous="False">
+                    <Condition Enabled="true" Grouping="Or">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:P2AerTowerCount}" ExpressionTypeL="Numeric" ExpressionR="8" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="20" VariableOp="SetNumeric" VariableName="p2botowerType" VariableExpression="${var:p2b1tower}+${var:p2b2tower}+${var:p2b3tower}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="10" Asynchronous="False">
+                    <Condition Enabled="true" Grouping="Or">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:P2AerTowerCount}" ExpressionTypeL="Numeric" ExpressionR="8" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="21" VariableOp="SetNumeric" VariableName="p2cotowerType" VariableExpression="${var:p2c1tower}+${var:p2c2tower}+${var:p2c3tower}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="10" Asynchronous="False">
+                    <Condition Enabled="true" Grouping="Or">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:P2AerTowerCount}" ExpressionTypeL="Numeric" ExpressionR="8" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="22" VariableOp="SetNumeric" VariableName="p2dotowerType" VariableExpression="${var:p2d1tower}+${var:p2d2tower}+${var:p2d3tower}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="10" Asynchronous="False">
+                    <Condition Enabled="true" Grouping="Or">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:P2AerTowerCount}" ExpressionTypeL="Numeric" ExpressionR="8" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="23" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerForce="regexp,active" ActionType="Placeholder" ExecutionDelayExpression="150" Asynchronous="False">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="24" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="67c587e8-d06e-47c1-865c-3e6ba2ccdd2b" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="10" Asynchronous="False">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:mtismy}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:P2AerTowerCount}" ExpressionTypeL="Numeric" ExpressionR="8" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="25" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="38400d4f-3f79-419f-83cf-a47ced1e8d88" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="10" Asynchronous="False">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:stismy}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:P2AerTowerCount}" ExpressionTypeL="Numeric" ExpressionR="8" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="26" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="25af7352-9091-440e-8b9f-239b293dda47" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="10" Asynchronous="False">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:h1ismy}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:P2AerTowerCount}" ExpressionTypeL="Numeric" ExpressionR="8" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="27" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="26521ea4-5a7d-49de-bbc7-0b34d57fac32" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="10" Asynchronous="False">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:h2ismy}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:P2AerTowerCount}" ExpressionTypeL="Numeric" ExpressionR="8" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="28" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="369eccbb-ac9c-42e5-9af2-2f30ca4bfefd" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="10" Asynchronous="False">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:d1ismy}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:P2AerTowerCount}" ExpressionTypeL="Numeric" ExpressionR="8" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="29" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="64ee0cbe-b091-4892-99c9-d508276a6845" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="10" Asynchronous="False">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:d2ismy}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:P2AerTowerCount}" ExpressionTypeL="Numeric" ExpressionR="8" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="30" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="ac799f05-782f-4790-bc07-f32d054941a3" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="10" Asynchronous="False">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:d3ismy}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:P2AerTowerCount}" ExpressionTypeL="Numeric" ExpressionR="8" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="31" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="0393444c-ed06-43e3-a364-c9ec1b6cb676" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="10" Asynchronous="False">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:d4ismy}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:P2AerTowerCount}" ExpressionTypeL="Numeric" ExpressionR="8" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
             </Triggers>
           </Folder>
         </Folders>
-        <Triggers />
+        <Triggers>
+          <Trigger Enabled="true" Name="左右刀" Id="7d9cd544-8e9f-4893-a7b6-484c411e1507" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|63C(?&lt;p2rorl&gt;[0-1]{1})\|[^|]*\|[^|]*\|[^|]*\|2.7[^|]*\|">
+            <Actions>
+              <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="左左左" UseTTSRateExpression="2" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${p2rorl}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="2" OBSEndPoint="" UseTTSTextExpression="右右右" UseTTSRateExpression="2" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${p2rorl}" ExpressionTypeL="String" ExpressionR="0" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+        </Triggers>
       </Folder>
       <Folder Id="5bdc597c-9776-4c7c-8dde-b8ff658f92d9" Name="P3" Enabled="true">
         <Folders />
@@ -4902,7 +4937,7 @@
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
-          <Trigger Enabled="true" Source="FFXIVNetwork" Name="塔buff" Id="5682a020-caed-4ccb-a90e-ecbfdbc38c28" RegularExpression="^26\|[^|]*\|AC(?&lt;p3id&gt;[0-9]{1})\|[^|]*\|(?&lt;p3bufftime&gt;[0-9]{1,2})\.00\|[^|]*\|\|[^|]*\|(?&lt;name&gt;[^|]*)\|">
+          <Trigger Enabled="true" Source="FFXIVNetwork" Name="塔buff" Id="5682a020-caed-4ccb-a90e-ecbfdbc38c28" RegularExpression="^26\|[^|]*\|AC(?&lt;p3id&gt;[0-9]{1})\|[^|]*\|(?&lt;p3bufftime&gt;[0-9]{1,2})\.[^|]*\|[^|]*\|\|[^|]*\|(?&lt;name&gt;[^|]*)\|">
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="脚下放塔" UseTTSRateExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" Asynchronous="False">
                 <Condition Enabled="true" Grouping="And">
@@ -4978,16 +5013,14 @@
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
-          <Trigger Enabled="true" Source="FFXIVNetwork" Name="记录尼德霍格ID" Id="4e7f6b90-f2ea-48e6-8a7f-6d3a5fd97daa" RegularExpression="^20\|[^|]*\|(?&lt;p3bossid&gt;[A-Z0-9]*)\|[^|]*\|670D[^|]*\|[^|]*\|[^|]*\|[^|]*\|4.70\|">
+          <Trigger Enabled="true" Source="FFXIVNetwork" Name="记录尼德霍格ID" Id="4e7f6b90-f2ea-48e6-8a7f-6d3a5fd97daa" RegularExpression="^20\|[^|]*\|(?&lt;p3bossid&gt;[A-Z0-9]*)\|[^|]*\|670D[^|]*\|[^|]*\|[^|]*\|[^|]*\|4.70*\|">
             <Actions>
               <Action OrderNumber="1" OBSEndPoint="" VariableOp="SetNumeric" VariableName="p3bossiddec" VariableExpression="hex2dec(${p3bossid})" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Source="FFXIVNetwork" Name="分摊加钢铁或月环" Id="8a6471d6-9db6-4eab-ad12-ed5a66942d60" RegularExpression="^20\|[^|]*\|[A-Z0-9]{8}\|[^|]*\|671(?&lt;p3inout&gt;[2-3]{1})\|">
             <Actions>
@@ -5039,7 +5072,6 @@
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
         </Triggers>
       </Folder>
