@@ -19,6 +19,8 @@
 
 ## 本技能提醒需要卫月插件[Splatoon](https://github.com/Eternita-S/Splatoon)
 * **请务必按照上述链接前往安装**
+* 务必启用以下设置
+* ![图片](https://user-images.githubusercontent.com/31427200/170856016-206adf2e-54ce-477d-8ca7-0278254efabb.png)
 
 ## 请手动填写玩家名至该触发器
 ![图片](https://user-images.githubusercontent.com/31427200/170809073-2cfdcd4d-d831-4dae-9f32-e57ffb231d2d.png)
