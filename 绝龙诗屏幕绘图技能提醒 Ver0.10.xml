@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <TriggernometryExport Version="1">
-  <ExportedFolder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^968$" Id="1b97c662-6580-4d5c-bc34-5154bf35c8ce" Name="绝龙诗屏幕绘图技能提醒" Enabled="true">
+  <ExportedFolder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^968$" Id="1b97c662-6580-4d5c-bc34-5154bf35c8ce" Name="绝龙诗屏幕绘图技能提醒 Ver0.10" Enabled="true">
     <Folders>
       <Folder Id="04b62138-2840-4d97-b648-df0507da0985" Name="P1" Enabled="true">
         <Folders>
@@ -102,43 +102,54 @@
                   <Action OrderNumber="8" VariableName="isp2le" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="9" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mypositionAnim&amp;destroyAt=50" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:1.0,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" Asynchronous="False">
+                  <Action OrderNumber="9" OBSEndPoint="" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="EnableTrigger" TriggerId="226910b7-07ad-414a-8e02-3f77e81eaa6b" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="10" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mypositionAnim&amp;destroyAt=50" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.9,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="50" Asynchronous="False">
+                  <Action OrderNumber="10" OBSEndPoint="" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="EnableTrigger" TriggerId="aa6e1f0f-17ab-41a8-8dbe-f914cf5a6f1e" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="11" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mypositionAnim&amp;destroyAt=50" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.8,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="50" Asynchronous="False">
+                  <Action OrderNumber="11" OBSEndPoint="" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="EnableTrigger" TriggerId="df8bbcfc-f643-4bff-8395-e23911464627" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="12" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mypositionAnim&amp;destroyAt=50" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.7,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="50" Asynchronous="False">
+                  <Action OrderNumber="12" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mypositionAnim&amp;destroyAt=50" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:1.0,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" Asynchronous="False">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="13" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mypositionAnim&amp;destroyAt=50" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.6,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="50" Asynchronous="False">
+                  <Action OrderNumber="13" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mypositionAnim&amp;destroyAt=50" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.9,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="50" Asynchronous="False">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="14" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mypositionAnim&amp;destroyAt=50" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.5,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="50" Asynchronous="False">
+                  <Action OrderNumber="14" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mypositionAnim&amp;destroyAt=50" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.8,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="50" Asynchronous="False">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="15" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mypositionAnim&amp;destroyAt=50" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.4,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="50" Asynchronous="False">
+                  <Action OrderNumber="15" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mypositionAnim&amp;destroyAt=50" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.7,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="50" Asynchronous="False">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="16" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mypositionAnim&amp;destroyAt=50" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.3,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="50" Asynchronous="False">
+                  <Action OrderNumber="16" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mypositionAnim&amp;destroyAt=50" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.6,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="50" Asynchronous="False">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="17" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mypositionAnim&amp;destroyAt=50" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.2,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="50" Asynchronous="False">
+                  <Action OrderNumber="17" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mypositionAnim&amp;destroyAt=50" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.5,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="50" Asynchronous="False">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="18" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mypositionAnim&amp;destroyAt=50" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.1,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="50" Asynchronous="False">
+                  <Action OrderNumber="18" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mypositionAnim&amp;destroyAt=50" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.4,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="50" Asynchronous="False">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="19" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=myposition" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.0,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="50" Asynchronous="False">
+                  <Action OrderNumber="19" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mypositionAnim&amp;destroyAt=50" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.3,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="50" Asynchronous="False">
                     <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="20" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mypositionAnim&amp;destroyAt=50" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.2,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="50" Asynchronous="False">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="21" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mypositionAnim&amp;destroyAt=50" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.1,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="50" Asynchronous="False">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="22" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=myposition" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.0,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="50" Asynchronous="False">
+                    <Condition Enabled="true" Grouping="Or">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:myposition}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="自动禁用" Id="3c23099f-2da7-48e6-b8a9-fec544608d6a" RegularExpression="^20\|[^\|]*\|[^\|]*\|[^\|]*\|63C8\|[^\|]*\|[^\|]*\|[^\|]*\|2.70\|">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="自动禁用" Id="3c23099f-2da7-48e6-b8a9-fec544608d6a" RegularExpression="^20\|[^\|]*\|[^\|]*\|[^\|]*\|63C8\|[^\|]*\|[^\|]*\|[^\|]*\|2.7[^|]*\|">
                 <Actions>
                   <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="isp2le" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                     <Condition Enabled="false" Grouping="Or" />
@@ -263,24 +274,28 @@
                     <Condition Enabled="true" Grouping="And">
                       <ConditionSingle Enabled="true" ExpressionL="${var:thrustCount}" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                       <ConditionSingle Enabled="true" ExpressionL="${var:thrustFlag}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ChargeRange}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                     </Condition>
                   </Action>
                   <Action OrderNumber="11" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=13Charge&amp;destroyAt=5000" JsonPayloadExpression="{&quot;type&quot;:2,&quot;refX&quot;:116.26,&quot;refY&quot;:83.74,&quot;offX&quot;:83.74,&quot;offY&quot;:116.26,&quot;radius&quot;:8.4,&quot;color&quot;:2566979562,&quot;thicc&quot;:20.0,&quot;refActorDataID&quot;:13728,&quot;refActorComparisonType&quot;:3,&quot;tether&quot;:true,&quot;Filled&quot;:true}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
                     <Condition Enabled="true" Grouping="And">
                       <ConditionSingle Enabled="true" ExpressionL="${var:thrustCount}" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                       <ConditionSingle Enabled="true" ExpressionL="${var:thrustFlag}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ChargeRange}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                     </Condition>
                   </Action>
                   <Action OrderNumber="12" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=BDCharge&amp;destroyAt=5000" JsonPayloadExpression="{&quot;type&quot;:2,&quot;refX&quot;:123,&quot;refY&quot;:100,&quot;offX&quot;:77,&quot;offY&quot;:100,&quot;radius&quot;:8.4,&quot;color&quot;:2566979562,&quot;thicc&quot;:20.0,&quot;refActorDataID&quot;:13728,&quot;refActorComparisonType&quot;:3,&quot;tether&quot;:true,&quot;Filled&quot;:true}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
                     <Condition Enabled="true" Grouping="And">
                       <ConditionSingle Enabled="true" ExpressionL="${var:thrustCount}" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                       <ConditionSingle Enabled="true" ExpressionL="${var:thrustFlag}" ExpressionTypeL="Numeric" ExpressionR="4" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ChargeRange}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                     </Condition>
                   </Action>
                   <Action OrderNumber="13" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=24Charge&amp;destroyAt=5000" JsonPayloadExpression="{&quot;type&quot;:2,&quot;refX&quot;:116.26,&quot;refY&quot;:116.26,&quot;offX&quot;:83.74,&quot;offY&quot;:83.74,&quot;radius&quot;:8.4,&quot;color&quot;:2566979562,&quot;thicc&quot;:20.0,&quot;refActorDataID&quot;:13728,&quot;refActorComparisonType&quot;:3,&quot;tether&quot;:true,&quot;Filled&quot;:true}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
                     <Condition Enabled="true" Grouping="And">
                       <ConditionSingle Enabled="true" ExpressionL="${var:thrustCount}" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                       <ConditionSingle Enabled="true" ExpressionL="${var:thrustFlag}" ExpressionTypeL="Numeric" ExpressionR="8" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ChargeRange}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                     </Condition>
                   </Action>
                   <Action OrderNumber="14" UseTTSTextExpression="A C A C" UseTTSRateExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" Description="North/South">
@@ -456,85 +471,62 @@
                     </Condition>
                   </Action>
                 </Actions>
-                <Condition Enabled="true" Grouping="Or">
+                <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${var:P2TowerCount}" ExpressionTypeL="Numeric" ExpressionR="6" ExpressionTypeR="Numeric" ConditionType="NumericLessEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:P2Guide1}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="谁点了蓝标" Id="13061f51-386a-4073-bb6a-1c9f5657e48d" RegularExpression="^27\|[^|]*\|[^|]*\|(?&lt;P2LqName&gt;[^\|]*)\|[^|]*\|[^|]*\|(?&lt;P2LqID&gt;[A-Z0-9]{4})\|">
                 <Actions>
-                  <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="mtismy" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Variable">
+                  <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="p2lqCount" VariableExpression="${var:p2lqCount}+1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="stismy" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Variable">
+                  <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="P2LqLocate" VariableExpression="(hex2dec(${P2LqID})-${var:ColorHeadMarkOffset})-44" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" ExecutionDelayExpression="10" RefireRequeue="False">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="3" VariableOp="SetNumeric" VariableName="h1ismy" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Variable">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="4" VariableOp="SetNumeric" VariableName="h2ismy" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Variable">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="5" VariableOp="SetNumeric" VariableName="d1ismy" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Variable">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="6" VariableOp="SetNumeric" VariableName="d2ismy" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Variable">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="7" VariableOp="SetNumeric" VariableName="d3ismy" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Variable">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="8" VariableOp="SetNumeric" VariableName="d4ismy" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Variable">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="9" VariableOp="SetNumeric" VariableName="p2lqCount" VariableExpression="${var:p2lqCount}+1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="10" VariableOp="SetNumeric" VariableName="P2LqLocate" VariableExpression="(hex2dec(${P2LqID})-${var:ColorHeadMarkOffset})-44" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" ExecutionDelayExpression="10" RefireRequeue="False">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="11" VariableOp="SetNumeric" VariableName="p2lqmt" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Variable" ExecutionDelayExpression="20">
+                  <Action OrderNumber="3" VariableOp="SetNumeric" VariableName="p2lqmt" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Variable" ExecutionDelayExpression="20">
                     <Condition Enabled="true" Grouping="And">
                       <ConditionSingle Enabled="true" ExpressionL="${var:P2LqLocate}" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                       <ConditionSingle Enabled="true" ExpressionL="${P2LqName}" ExpressionTypeL="String" ExpressionR="${var:exCirMTName}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                     </Condition>
                   </Action>
-                  <Action OrderNumber="12" VariableOp="SetNumeric" VariableName="p2lqst" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Variable" ExecutionDelayExpression="20">
+                  <Action OrderNumber="4" VariableOp="SetNumeric" VariableName="p2lqst" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Variable" ExecutionDelayExpression="20">
                     <Condition Enabled="true" Grouping="And">
                       <ConditionSingle Enabled="true" ExpressionL="${var:P2LqLocate}" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                       <ConditionSingle Enabled="true" ExpressionL="${P2LqName}" ExpressionTypeL="String" ExpressionR="${var:exCirSTName}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                     </Condition>
                   </Action>
-                  <Action OrderNumber="13" VariableOp="SetNumeric" VariableName="p2lqh1" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="20">
+                  <Action OrderNumber="5" VariableOp="SetNumeric" VariableName="p2lqh1" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="20">
                     <Condition Enabled="true" Grouping="And">
                       <ConditionSingle Enabled="true" ExpressionL="${var:P2LqLocate}" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                       <ConditionSingle Enabled="true" ExpressionL="${P2LqName}" ExpressionTypeL="String" ExpressionR="${var:exCirH1Name}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                     </Condition>
                   </Action>
-                  <Action OrderNumber="14" VariableOp="SetNumeric" VariableName="p2lqh2" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="20">
+                  <Action OrderNumber="6" VariableOp="SetNumeric" VariableName="p2lqh2" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="20">
                     <Condition Enabled="true" Grouping="And">
                       <ConditionSingle Enabled="true" ExpressionL="${var:P2LqLocate}" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                       <ConditionSingle Enabled="true" ExpressionL="${P2LqName}" ExpressionTypeL="String" ExpressionR="${var:exCirH2Name}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                     </Condition>
                   </Action>
-                  <Action OrderNumber="15" VariableOp="SetNumeric" VariableName="p2lqd1" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="20">
+                  <Action OrderNumber="7" VariableOp="SetNumeric" VariableName="p2lqd1" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="20">
                     <Condition Enabled="true" Grouping="And">
                       <ConditionSingle Enabled="true" ExpressionL="${var:P2LqLocate}" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                       <ConditionSingle Enabled="true" ExpressionL="${P2LqName}" ExpressionTypeL="String" ExpressionR="${var:exCirD1Name}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                     </Condition>
                   </Action>
-                  <Action OrderNumber="16" VariableOp="SetNumeric" VariableName="p2lqd2" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="20">
+                  <Action OrderNumber="8" VariableOp="SetNumeric" VariableName="p2lqd2" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="20">
                     <Condition Enabled="true" Grouping="And">
                       <ConditionSingle Enabled="true" ExpressionL="${var:P2LqLocate}" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                       <ConditionSingle Enabled="true" ExpressionL="${P2LqName}" ExpressionTypeL="String" ExpressionR="${var:exCirD2Name}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                     </Condition>
                   </Action>
-                  <Action OrderNumber="17" VariableOp="SetNumeric" VariableName="p2lqd3" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="20">
+                  <Action OrderNumber="9" VariableOp="SetNumeric" VariableName="p2lqd3" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="20">
                     <Condition Enabled="true" Grouping="And">
                       <ConditionSingle Enabled="true" ExpressionL="${var:P2LqLocate}" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                       <ConditionSingle Enabled="true" ExpressionL="${P2LqName}" ExpressionTypeL="String" ExpressionR="${var:exCirD3Name}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                     </Condition>
                   </Action>
-                  <Action OrderNumber="18" VariableOp="SetNumeric" VariableName="p2lqd4" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="20">
+                  <Action OrderNumber="10" VariableOp="SetNumeric" VariableName="p2lqd4" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="20">
                     <Condition Enabled="true" Grouping="And">
                       <ConditionSingle Enabled="true" ExpressionL="${var:P2LqLocate}" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                       <ConditionSingle Enabled="true" ExpressionL="${P2LqName}" ExpressionTypeL="String" ExpressionR="${var:exCirD4Name}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
@@ -1007,7 +999,9 @@
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
-                <Condition Enabled="false" Grouping="Or" />
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:EarthquakeRange}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </Condition>
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="初始化" Id="d997b339-e556-412b-9c89-08cf39ba8863" RegularExpression="^33\|[^|]*\|[^|]*\|400000(?&gt;03|10)\|">
                 <Actions>
@@ -4666,13 +4660,13 @@
                       <ConditionSingle Enabled="true" ExpressionL="${var:p2ysd1}+${var:p2ysd2}+${var:p2ysd3}+${var:p2ysd4}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                     </Condition>
                   </Action>
-                  <Action OrderNumber="12" UseTTSTextExpression="点了替奶" UseTTSRateExpression="2" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="a499cdd4-3559-4443-99ac-60e3517b8f11" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="30">
+                  <Action OrderNumber="12" UseTTSTextExpression="点了替奶" UseTTSRateExpression="2" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="f7983bf2-8421-4f1c-9de9-8efb8ecce7e8" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="30">
                     <Condition Enabled="true" Grouping="Or">
                       <ConditionSingle Enabled="true" ExpressionL="${var:p2ysmt}+${var:p2ysh1}+${var:p2ysst}+${var:p2ysh2}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                       <ConditionSingle Enabled="true" ExpressionL="${var:p2ysd1}+${var:p2ysd2}+${var:p2ysd3}+${var:p2ysd4}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                     </Condition>
                   </Action>
-                  <Action OrderNumber="13" UseTTSTextExpression="点了第屁S" UseTTSRateExpression="2" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="629a09b6-54c9-4809-9efa-d5a2444c0012" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="30">
+                  <Action OrderNumber="13" UseTTSTextExpression="点了第屁S" UseTTSRateExpression="2" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="63c65e64-3a58-44df-bb85-82406978b4e8" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="30">
                     <Condition Enabled="true" Grouping="Or">
                       <ConditionSingle Enabled="true" ExpressionL="${var:p2ysd1}+${var:p2ysd2}+${var:p2ysd3}+${var:p2ysd4}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                       <ConditionSingle Enabled="true" ExpressionL="${var:p2ysmt}+${var:p2ysh1}+${var:p2ysst}+${var:p2ysh2}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
@@ -4684,14 +4678,16 @@
                       <ConditionSingle Enabled="true" ExpressionL="${var:p2ysmt}+${var:p2ysh1}+${var:p2ysst}+${var:p2ysh2}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                     </Condition>
                   </Action>
-                  <Action OrderNumber="15" UseTTSTextExpression="点了第屁S" UseTTSRateExpression="2" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="DisableTrigger" TriggerId="f70a25fb-6b4a-4261-ad5a-839ed712ffd3" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="500" Asynchronous="False">
+                  <Action OrderNumber="15" UseTTSTextExpression="点了第屁S" UseTTSRateExpression="2" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="DisableTrigger" TriggerId="f70a25fb-6b4a-4261-ad5a-839ed712ffd3" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="10" Asynchronous="False">
                     <Condition Enabled="true" Grouping="Or">
                       <ConditionSingle Enabled="true" ExpressionL="${var:p2ysd1}+${var:p2ysd2}+${var:p2ysd3}+${var:p2ysd4}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                       <ConditionSingle Enabled="true" ExpressionL="${var:p2ysmt}+${var:p2ysh1}+${var:p2ysst}+${var:p2ysh2}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                     </Condition>
                   </Action>
                 </Actions>
-                <Condition Enabled="false" Grouping="Or" />
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:P2Guide2}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </Condition>
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="塔刷哪了" Id="f70a25fb-6b4a-4261-ad5a-839ed712ffd3" RegularExpression="^20\|[^\|]*\|[^\|]*\|[^\|]*\|737C\|[^\|]*\|E0000000\|\|11.70*\|(?&lt;p2towerx2&gt;[\.0-9]*)\|(?&lt;p2towery2&gt;[\.0-9]*)\|">
                 <Actions>
@@ -4820,49 +4816,49 @@
                   <Action OrderNumber="23" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerForce="regexp,active" ActionType="Placeholder" ExecutionDelayExpression="150" Asynchronous="False">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="24" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="67c587e8-d06e-47c1-865c-3e6ba2ccdd2b" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="10" Asynchronous="False">
+                  <Action OrderNumber="24" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="3d90eb5d-970c-4e0f-ad10-2416fbb9d013" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="10" Asynchronous="False">
                     <Condition Enabled="true" Grouping="And">
                       <ConditionSingle Enabled="true" ExpressionL="${var:mtismy}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                       <ConditionSingle Enabled="true" ExpressionL="${var:P2AerTowerCount}" ExpressionTypeL="Numeric" ExpressionR="8" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                     </Condition>
                   </Action>
-                  <Action OrderNumber="25" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="38400d4f-3f79-419f-83cf-a47ced1e8d88" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="10" Asynchronous="False">
+                  <Action OrderNumber="25" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="8dbc1de5-33ec-412c-b223-531b2d08f82a" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="10" Asynchronous="False">
                     <Condition Enabled="true" Grouping="And">
                       <ConditionSingle Enabled="true" ExpressionL="${var:stismy}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                       <ConditionSingle Enabled="true" ExpressionL="${var:P2AerTowerCount}" ExpressionTypeL="Numeric" ExpressionR="8" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                     </Condition>
                   </Action>
-                  <Action OrderNumber="26" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="25af7352-9091-440e-8b9f-239b293dda47" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="10" Asynchronous="False">
+                  <Action OrderNumber="26" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="c6d0fbbd-565d-4e95-af59-88356e7a1e7d" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="10" Asynchronous="False">
                     <Condition Enabled="true" Grouping="And">
                       <ConditionSingle Enabled="true" ExpressionL="${var:h1ismy}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                       <ConditionSingle Enabled="true" ExpressionL="${var:P2AerTowerCount}" ExpressionTypeL="Numeric" ExpressionR="8" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                     </Condition>
                   </Action>
-                  <Action OrderNumber="27" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="26521ea4-5a7d-49de-bbc7-0b34d57fac32" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="10" Asynchronous="False">
+                  <Action OrderNumber="27" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="0c8beb8f-9514-4db9-bf36-ccc3000c347d" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="10" Asynchronous="False">
                     <Condition Enabled="true" Grouping="And">
                       <ConditionSingle Enabled="true" ExpressionL="${var:h2ismy}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                       <ConditionSingle Enabled="true" ExpressionL="${var:P2AerTowerCount}" ExpressionTypeL="Numeric" ExpressionR="8" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                     </Condition>
                   </Action>
-                  <Action OrderNumber="28" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="369eccbb-ac9c-42e5-9af2-2f30ca4bfefd" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="10" Asynchronous="False">
+                  <Action OrderNumber="28" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="b35ef472-a8bd-4dab-bda3-97423fef8489" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="10" Asynchronous="False">
                     <Condition Enabled="true" Grouping="And">
                       <ConditionSingle Enabled="true" ExpressionL="${var:d1ismy}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                       <ConditionSingle Enabled="true" ExpressionL="${var:P2AerTowerCount}" ExpressionTypeL="Numeric" ExpressionR="8" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                     </Condition>
                   </Action>
-                  <Action OrderNumber="29" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="64ee0cbe-b091-4892-99c9-d508276a6845" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="10" Asynchronous="False">
+                  <Action OrderNumber="29" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="e31c3881-5177-4705-94f2-ea1e2029a3d6" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="10" Asynchronous="False">
                     <Condition Enabled="true" Grouping="And">
                       <ConditionSingle Enabled="true" ExpressionL="${var:d2ismy}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                       <ConditionSingle Enabled="true" ExpressionL="${var:P2AerTowerCount}" ExpressionTypeL="Numeric" ExpressionR="8" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                     </Condition>
                   </Action>
-                  <Action OrderNumber="30" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="ac799f05-782f-4790-bc07-f32d054941a3" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="10" Asynchronous="False">
+                  <Action OrderNumber="30" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="f5256609-fca3-4c85-92d9-5519ce5b4479" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="10" Asynchronous="False">
                     <Condition Enabled="true" Grouping="And">
                       <ConditionSingle Enabled="true" ExpressionL="${var:d3ismy}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                       <ConditionSingle Enabled="true" ExpressionL="${var:P2AerTowerCount}" ExpressionTypeL="Numeric" ExpressionR="8" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                     </Condition>
                   </Action>
-                  <Action OrderNumber="31" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="0393444c-ed06-43e3-a364-c9ec1b6cb676" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="10" Asynchronous="False">
+                  <Action OrderNumber="31" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="554988b9-1ae2-4756-8366-37f12986f7b0" TriggerForce="regexp,active" ActionType="Trigger" ExecutionDelayExpression="10" Asynchronous="False">
                     <Condition Enabled="true" Grouping="And">
                       <ConditionSingle Enabled="true" ExpressionL="${var:d4ismy}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                       <ConditionSingle Enabled="true" ExpressionL="${var:P2AerTowerCount}" ExpressionTypeL="Numeric" ExpressionR="8" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
@@ -4907,6 +4903,7 @@
                 <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                   <ConditionSingle Enabled="true" ExpressionL="${p3maj}" ExpressionTypeL="String" ExpressionR="C" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:P3Guide2}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
               </Action>
               <Action OrderNumber="3" UseTTSTextExpression="2号,踩两边注意诱导" UseTTSRateExpression="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
@@ -4919,6 +4916,7 @@
                 <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                   <ConditionSingle Enabled="true" ExpressionL="${p3maj}" ExpressionTypeL="String" ExpressionR="D" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:P3Guide2}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
               </Action>
               <Action OrderNumber="5" UseTTSTextExpression="3号,踩1塔注意诱导" UseTTSRateExpression="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
@@ -4931,6 +4929,7 @@
                 <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                   <ConditionSingle Enabled="true" ExpressionL="${p3maj}" ExpressionTypeL="String" ExpressionR="E" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:P3Guide2}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
               </Action>
             </Actions>
@@ -4954,12 +4953,14 @@
                 <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                   <ConditionSingle Enabled="true" ExpressionL="${p3id}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:P3Guide3}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
               </Action>
               <Action OrderNumber="4" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mybuffov&amp;destroyAt=${var:p3bufftimems}" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:5.5,&quot;color&quot;:855682815,&quot;overlayFScale&quot;:1.96,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;,&quot;includeRotation&quot;:true,&quot;Filled&quot;:true}" UseTTSTextExpression="脚下放塔" UseTTSRateExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" ExecutionDelayExpression="10" Asynchronous="False">
                 <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                   <ConditionSingle Enabled="true" ExpressionL="${p3id}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:P3Guide3}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
               </Action>
               <Action OrderNumber="5" UseTTSTextExpression="面前放塔" UseTTSRateExpression="2" UseTTSExclusive="False" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
@@ -4978,12 +4979,14 @@
                 <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                   <ConditionSingle Enabled="true" ExpressionL="${p3id}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:P3Guide3}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
               </Action>
               <Action OrderNumber="8" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mybuffov&amp;destroyAt=${var:p3bufftimems}" JsonPayloadExpression="{&quot;type&quot;:1,&quot;offY&quot;:18.0,&quot;radius&quot;:5.5,&quot;color&quot;:855682815,&quot;overlayFScale&quot;:1.96,&quot;overlayText&quot;:&quot;前塔予估&quot;,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;,&quot;includeRotation&quot;:true,&quot;Filled&quot;:true}" UseTTSTextExpression="脚下放塔" UseTTSRateExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" ExecutionDelayExpression="10" Asynchronous="False">
                 <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                   <ConditionSingle Enabled="true" ExpressionL="${p3id}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:P3Guide3}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
               </Action>
               <Action OrderNumber="9" UseTTSTextExpression="背后放塔" UseTTSRateExpression="2" UseTTSExclusive="False" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
@@ -5002,18 +5005,20 @@
                 <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                   <ConditionSingle Enabled="true" ExpressionL="${p3id}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:P3Guide3}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
               </Action>
               <Action OrderNumber="12" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mybuffov&amp;destroyAt=${var:p3bufftimems}" JsonPayloadExpression="{&quot;type&quot;:1,&quot;offY&quot;:-18.0,&quot;radius&quot;:5.5,&quot;color&quot;:855682815,&quot;overlayFScale&quot;:1.96,&quot;overlayText&quot;:&quot;后塔予估&quot;,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;,&quot;includeRotation&quot;:true,&quot;Filled&quot;:true}" UseTTSTextExpression="脚下放塔" UseTTSRateExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" ExecutionDelayExpression="10" Asynchronous="False">
                 <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                   <ConditionSingle Enabled="true" ExpressionL="${p3id}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:P3Guide3}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
-          <Trigger Enabled="true" Source="FFXIVNetwork" Name="记录尼德霍格ID" Id="4e7f6b90-f2ea-48e6-8a7f-6d3a5fd97daa" RegularExpression="^20\|[^|]*\|(?&lt;p3bossid&gt;[A-Z0-9]*)\|[^|]*\|670D[^|]*\|[^|]*\|[^|]*\|[^|]*\|4.70*\|">
+          <Trigger Enabled="true" Source="FFXIVNetwork" Name="记录尼德霍格ID" Id="4e7f6b90-f2ea-48e6-8a7f-6d3a5fd97daa" RegularExpression="^20\|[^|]*\|(?&lt;p3bossid&gt;[A-Z0-9]*)\|[^|]*\|670D[^|]*\|[^|]*\|[^|]*\|[^|]*\|4.7[^|]*\|">
             <Actions>
               <Action OrderNumber="1" OBSEndPoint="" VariableOp="SetNumeric" VariableName="p3bossiddec" VariableExpression="hex2dec(${p3bossid})" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                 <Condition Enabled="false" Grouping="Or" />
@@ -5029,8 +5034,9 @@
                 </Condition>
               </Action>
               <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=p3inorout&amp;destroyAt=15000" JsonPayloadExpression="{&quot;type&quot;:1,&quot;offZ&quot;:-1.0,&quot;radius&quot;:0.0,&quot;overlayTextColor&quot;:4294967295,&quot;overlayFScale&quot;:2.5,&quot;thicc&quot;:0.0,&quot;overlayText&quot;:&quot;分攤→鋼鐵→月環&quot;,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" UseTTSTextExpression="分摊,钢铁,月环" UseTTSRateExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False">
-                <Condition Enabled="true" Grouping="Or">
+                <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${p3inout}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:P3Guide1}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
               </Action>
               <Action OrderNumber="3" UseTTSTextExpression="分摊,月环,钢铁" UseTTSRateExpression="2" UseTTSExclusive="False" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
@@ -5039,34 +5045,39 @@
                 </Condition>
               </Action>
               <Action OrderNumber="4" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=p3inorout&amp;destroyAt=15000" JsonPayloadExpression="{&quot;type&quot;:1,&quot;offZ&quot;:-1.0,&quot;radius&quot;:0.0,&quot;overlayTextColor&quot;:4294967295,&quot;overlayFScale&quot;:2.5,&quot;thicc&quot;:0.0,&quot;overlayText&quot;:&quot;分攤→月環→鋼鐵&quot;,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" UseTTSTextExpression="分摊,钢铁,月环" UseTTSRateExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False">
-                <Condition Enabled="true" Grouping="Or">
+                <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${p3inout}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:P3Guide1}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
               </Action>
               <Action OrderNumber="5" OBSEndPoint="" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Placeholder" ExecutionDelayExpression="8000" Asynchronous="False">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
               <Action OrderNumber="6" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=p3out&amp;destroyAt=5000" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:9.0,&quot;color&quot;:1677783295,&quot;overlayFScale&quot;:1.96,&quot;refActorObjectID&quot;:${var:p3bossiddec},&quot;includeRotation&quot;:true,&quot;Filled&quot;:true}" UseTTSTextExpression="分摊,钢铁,月环" UseTTSRateExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False">
-                <Condition Enabled="true" Grouping="Or">
+                <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${p3inout}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:P3Guide1}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
               </Action>
               <Action OrderNumber="7" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=p3out&amp;destroyAt=5000" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:9.0,&quot;color&quot;:4278255606,&quot;thicc&quot;:50.0,&quot;refActorObjectID&quot;:${var:p3bossiddec},&quot;includeRotation&quot;:true}" UseTTSTextExpression="分摊,钢铁,月环" UseTTSRateExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False">
-                <Condition Enabled="true" Grouping="Or">
+                <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${p3inout}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:P3Guide1}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
               </Action>
               <Action OrderNumber="8" OBSEndPoint="" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Placeholder" ExecutionDelayExpression="5000" Asynchronous="False">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
               <Action OrderNumber="9" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=p3out&amp;destroyAt=3000" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:9.0,&quot;color&quot;:4278255606,&quot;thicc&quot;:50.0,&quot;refActorObjectID&quot;:${var:p3bossiddec},&quot;includeRotation&quot;:true}" UseTTSTextExpression="分摊,钢铁,月环" UseTTSRateExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False">
-                <Condition Enabled="true" Grouping="Or">
+                <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${p3inout}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:P3Guide1}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
               </Action>
               <Action OrderNumber="10" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=p3out&amp;destroyAt=3000" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:9.0,&quot;color&quot;:1677783295,&quot;overlayFScale&quot;:1.96,&quot;refActorObjectID&quot;:${var:p3bossiddec},&quot;includeRotation&quot;:true,&quot;Filled&quot;:true}" UseTTSTextExpression="分摊,钢铁,月环" UseTTSRateExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False">
-                <Condition Enabled="true" Grouping="Or">
+                <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${p3inout}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:P3Guide1}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
               </Action>
             </Actions>
@@ -5111,7 +5122,7 @@
       </Folder>
       <Folder Id="24ae2b1b-85d8-49b9-9982-abea69a022bb" Name="P5" Enabled="true">
         <Folders>
-          <Folder Id="7e7da876-f982-4c43-9abe-8551d2bd37c2" Name="死宣去哪" Enabled="true">
+          <Folder Id="7e7da876-f982-4c43-9abe-8551d2bd37c2" Name="死宣去哪(斧战士或黑龙为12点)" Enabled="true">
             <Folders>
               <Folder Id="b817231f-2b1e-41d0-8008-7ee76c5fa062" Name="索尼按钮2" Enabled="true">
                 <Folders />
@@ -5398,9 +5409,11 @@
             <Condition Enabled="false" Grouping="Or" />
           </Action>
         </Actions>
-        <Condition Enabled="false" Grouping="Or" />
+        <Condition Enabled="true" Grouping="Or">
+          <ConditionSingle Enabled="true" ExpressionL="${var:OrbExpRange}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+        </Condition>
       </Trigger>
-      <Trigger Enabled="true" Source="FFXIVNetwork" Name="我优先级多少(在上方勾上自己的职能,在下方填写队伍中对应人的ID)" Id="aa6e1f0f-17ab-41a8-8dbe-f914cf5a6f1e" RegularExpression="^27\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;myidis&gt;[A-Z0-9]{4})\|">
+      <Trigger Enabled="true" Source="FFXIVNetwork" Name="我优先级多少(在上方勾上自己的职能,在下方填写队伍中对应人的ID)" Id="aa6e1f0f-17ab-41a8-8dbe-f914cf5a6f1e" RegularExpression="^20\|[^\|]*\|[^\|]*\|[^\|]*\|63C8\|[^\|]*\|[^\|]*\|[^\|]*\|2.7[^|]*\|">
         <Actions>
           <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="mtismy" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Variable" Asynchronous="False">
             <Condition Enabled="false" Grouping="Or" />
@@ -5453,6 +5466,12 @@
           <Action OrderNumber="17" VariableOp="SetString" VariableName="exCirD4Name" VariableExpression="D4的名字" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
             <Condition Enabled="false" Grouping="Or" />
           </Action>
+          <Action OrderNumber="18" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Placeholder">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="19" OBSEndPoint="" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="DisableTrigger" TriggerId="aa6e1f0f-17ab-41a8-8dbe-f914cf5a6f1e" ActionType="Trigger" ExecutionDelayExpression="500" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
         </Actions>
         <Condition Enabled="false" Grouping="Or">
           <ConditionSingle Enabled="true" ExpressionL="0" ExpressionTypeL="Numeric" ExpressionR="${var:h1ismy}+${var:h2ismy}+${var:stismy}+${var:mtismy}+${var:d1ismy}+${var:d2ismy}+${var:d3ismy}+${var:d4ismy}" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
@@ -5465,6 +5484,96 @@
           </Action>
         </Actions>
         <Condition Enabled="false" Grouping="Or" />
+      </Trigger>
+      <Trigger Enabled="true" Source="FFXIVNetwork" Name="绘图功能控制(更改后手动触发或下一次重开生效)" Id="df8bbcfc-f643-4bff-8395-e23911464627" RegularExpression="^00\|.*" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="1000">
+        <Actions>
+          <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="位置标记(脚下的小黄点)" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="UseTTS">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="2" OBSEndPoint="" VariableOp="SetNumeric" VariableName="myposition" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="3" OBSEndPoint="" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Placeholder">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="4" OBSEndPoint="" UseTTSTextExpression="光玉爆炸范围" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="UseTTS">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="5" OBSEndPoint="" VariableOp="SetNumeric" VariableName="OrbExpRange" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="6" OBSEndPoint="" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Placeholder">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="7" OBSEndPoint="" UseTTSTextExpression="地震范围" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="UseTTS">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="8" OBSEndPoint="" VariableOp="SetNumeric" VariableName="EarthquakeRange" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="9" OBSEndPoint="" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Placeholder">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="10" OBSEndPoint="" UseTTSTextExpression="冲锋范围" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="UseTTS">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="11" OBSEndPoint="" VariableOp="SetNumeric" VariableName="ChargeRange" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="12" OBSEndPoint="" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Placeholder">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="13" OBSEndPoint="" UseTTSTextExpression="P2雷枪踩塔指引" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="UseTTS">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="14" OBSEndPoint="" VariableOp="SetNumeric" VariableName="P2Guide1" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="15" OBSEndPoint="" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Placeholder">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="16" OBSEndPoint="" UseTTSTextExpression="P2陨石踩塔指引" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="UseTTS">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="17" OBSEndPoint="" VariableOp="SetNumeric" VariableName="P2Guide2" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="18" OBSEndPoint="" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Placeholder">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="19" OBSEndPoint="" UseTTSTextExpression="P3钢铁月环画图和小抄" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="UseTTS">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="20" OBSEndPoint="" VariableOp="SetNumeric" VariableName="P3Guide1" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="21" OBSEndPoint="" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Placeholder">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="22" OBSEndPoint="" UseTTSTextExpression="P3麻将小抄" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="UseTTS">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="23" OBSEndPoint="" VariableOp="SetNumeric" VariableName="P3Guide2" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="24" OBSEndPoint="" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Placeholder">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="25" OBSEndPoint="" UseTTSTextExpression="P3放塔小抄和预览" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="UseTTS">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="26" OBSEndPoint="" VariableOp="SetNumeric" VariableName="P3Guide3" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="27" OBSEndPoint="" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Placeholder">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="28" OBSEndPoint="" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="DisableTrigger" TriggerId="df8bbcfc-f643-4bff-8395-e23911464627" ActionType="Trigger" ExecutionDelayExpression="500" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+        <Conditions />
       </Trigger>
     </Triggers>
   </ExportedFolder>
