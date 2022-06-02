@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <TriggernometryExport Version="1">
-  <ExportedFolder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^968$" Id="5c635848-e52a-48f9-8d35-c4a7c364f03d" Name="绝龙诗屏幕绘图技能提醒 Ver0.12" Enabled="true">
+  <ExportedFolder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^968$" Id="5c635848-e52a-48f9-8d35-c4a7c364f03d" Name="绝龙诗屏幕绘图技能提醒 Ver0.12b" Enabled="true">
     <Folders>
       <Folder Id="8499b6ec-4caa-40b9-bad1-c8d699ef6082" Name="P1" Enabled="true">
         <Folders>
@@ -9,12 +9,12 @@
             <Triggers>
               <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="我要去哪" Id="32428b81-c9be-4904-a552-a5b67a350d3a" RegularExpression="^27\|[^|]*\|[^|]*\|(?&lt;ColorTarget&gt;[^\|]*)\|[^|]*\|[^|]*\|(?&lt;ID&gt;[0-9A-F]{4})\|" MutexToCapture="Colors">
                 <Actions>
-                  <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="ColorHeadMarkOffset" VariableExpression="hex2dec(${ID})-hex2dec(2F)" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" Asynchronous="False">
+                  <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="ColorHeadMarkOffset" VariableExpression="hex2dec(${ID})-hex2dec(2F)" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" Enabled="False" ActionType="Variable" Asynchronous="False">
                     <Condition Enabled="true" Grouping="Or">
                       <ConditionSingle Enabled="true" ExpressionL="${evar:ColorHeadMarkOffset}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                     </Condition>
                   </Action>
-                  <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="ColorHeadMarkValue" VariableExpression="(hex2dec(${ID})-${var:ColorHeadMarkOffset})-47" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" Asynchronous="False">
+                  <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="ColorHeadMarkValue" VariableExpression="(hex2dec(${ID})-${var:ColorHeadMarkOffset})-47" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" ExecutionDelayExpression="20" Asynchronous="False">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                   <Action OrderNumber="3" VariableOp="SetString" VariableName="FirstRed" VariableExpression="${ColorTarget}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
@@ -106,40 +106,37 @@
                   <Action OrderNumber="9" OBSEndPoint="" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="EnableTrigger" TriggerId="32428b81-c9be-4904-a552-a5b67a350d3a" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="10" OBSEndPoint="" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="EnableTrigger" TriggerId="ed73fb5e-11e3-4b6f-999e-93f3852e06e2" ActionType="Trigger">
+                  <Action OrderNumber="10" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mypositionAnim&amp;destroyAt=50" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:1.0,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" Asynchronous="False">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="11" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mypositionAnim&amp;destroyAt=50" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:1.0,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" Asynchronous="False">
+                  <Action OrderNumber="11" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mypositionAnim&amp;destroyAt=50" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.9,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="50" Asynchronous="False">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="12" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mypositionAnim&amp;destroyAt=50" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.9,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="50" Asynchronous="False">
+                  <Action OrderNumber="12" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mypositionAnim&amp;destroyAt=50" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.8,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="50" Asynchronous="False">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="13" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mypositionAnim&amp;destroyAt=50" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.8,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="50" Asynchronous="False">
+                  <Action OrderNumber="13" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mypositionAnim&amp;destroyAt=50" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.7,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="50" Asynchronous="False">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="14" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mypositionAnim&amp;destroyAt=50" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.7,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="50" Asynchronous="False">
+                  <Action OrderNumber="14" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mypositionAnim&amp;destroyAt=50" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.6,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="50" Asynchronous="False">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="15" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mypositionAnim&amp;destroyAt=50" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.6,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="50" Asynchronous="False">
+                  <Action OrderNumber="15" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mypositionAnim&amp;destroyAt=50" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.5,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="50" Asynchronous="False">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="16" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mypositionAnim&amp;destroyAt=50" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.5,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="50" Asynchronous="False">
+                  <Action OrderNumber="16" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mypositionAnim&amp;destroyAt=50" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.4,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="50" Asynchronous="False">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="17" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mypositionAnim&amp;destroyAt=50" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.4,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="50" Asynchronous="False">
+                  <Action OrderNumber="17" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mypositionAnim&amp;destroyAt=50" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.3,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="50" Asynchronous="False">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="18" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mypositionAnim&amp;destroyAt=50" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.3,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="50" Asynchronous="False">
+                  <Action OrderNumber="18" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mypositionAnim&amp;destroyAt=50" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.2,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="50" Asynchronous="False">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="19" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mypositionAnim&amp;destroyAt=50" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.2,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="50" Asynchronous="False">
+                  <Action OrderNumber="19" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mypositionAnim&amp;destroyAt=50" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.1,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="50" Asynchronous="False">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="20" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=mypositionAnim&amp;destroyAt=50" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.1,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="50" Asynchronous="False">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="21" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=myposition" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.0,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="50" Asynchronous="False">
+                  <Action OrderNumber="20" JsonEndpointExpression="http://127.0.0.1:47774/?namespace=myposition" JsonPayloadExpression="{&quot;type&quot;:1,&quot;radius&quot;:0.0,&quot;color&quot;:4278255605,&quot;thicc&quot;:4.8,&quot;refActorName&quot;:&quot;${_ffxivplayer}&quot;}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="50" Asynchronous="False">
                     <Condition Enabled="true" Grouping="Or">
                       <ConditionSingle Enabled="true" ExpressionL="${var:myposition}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                     </Condition>
@@ -5527,96 +5524,6 @@
         <Condition Enabled="false" Grouping="Or" />
         <Conditions />
       </Trigger>
-      <Trigger Enabled="true" Source="FFXIVNetwork" Name="绘图功能控制(更改后手动触发或下一次重开生效)" Id="ed73fb5e-11e3-4b6f-999e-93f3852e06e2" RegularExpression="^00\|.*" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="1000">
-        <Actions>
-          <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="位置标记(脚下的小黄点)" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="UseTTS">
-            <Condition Enabled="false" Grouping="Or" />
-          </Action>
-          <Action OrderNumber="2" OBSEndPoint="" VariableOp="SetNumeric" VariableName="myposition" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
-            <Condition Enabled="false" Grouping="Or" />
-          </Action>
-          <Action OrderNumber="3" OBSEndPoint="" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Placeholder">
-            <Condition Enabled="false" Grouping="Or" />
-          </Action>
-          <Action OrderNumber="4" OBSEndPoint="" UseTTSTextExpression="光玉爆炸范围" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="UseTTS">
-            <Condition Enabled="false" Grouping="Or" />
-          </Action>
-          <Action OrderNumber="5" OBSEndPoint="" VariableOp="SetNumeric" VariableName="OrbExpRange" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
-            <Condition Enabled="false" Grouping="Or" />
-          </Action>
-          <Action OrderNumber="6" OBSEndPoint="" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Placeholder">
-            <Condition Enabled="false" Grouping="Or" />
-          </Action>
-          <Action OrderNumber="7" OBSEndPoint="" UseTTSTextExpression="地震范围" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="UseTTS">
-            <Condition Enabled="false" Grouping="Or" />
-          </Action>
-          <Action OrderNumber="8" OBSEndPoint="" VariableOp="SetNumeric" VariableName="EarthquakeRange" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
-            <Condition Enabled="false" Grouping="Or" />
-          </Action>
-          <Action OrderNumber="9" OBSEndPoint="" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Placeholder">
-            <Condition Enabled="false" Grouping="Or" />
-          </Action>
-          <Action OrderNumber="10" OBSEndPoint="" UseTTSTextExpression="冲锋范围" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="UseTTS">
-            <Condition Enabled="false" Grouping="Or" />
-          </Action>
-          <Action OrderNumber="11" OBSEndPoint="" VariableOp="SetNumeric" VariableName="ChargeRange" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
-            <Condition Enabled="false" Grouping="Or" />
-          </Action>
-          <Action OrderNumber="12" OBSEndPoint="" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Placeholder">
-            <Condition Enabled="false" Grouping="Or" />
-          </Action>
-          <Action OrderNumber="13" OBSEndPoint="" UseTTSTextExpression="P2雷枪踩塔指引" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="UseTTS">
-            <Condition Enabled="false" Grouping="Or" />
-          </Action>
-          <Action OrderNumber="14" OBSEndPoint="" VariableOp="SetNumeric" VariableName="P2Guide1" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
-            <Condition Enabled="false" Grouping="Or" />
-          </Action>
-          <Action OrderNumber="15" OBSEndPoint="" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Placeholder">
-            <Condition Enabled="false" Grouping="Or" />
-          </Action>
-          <Action OrderNumber="16" OBSEndPoint="" UseTTSTextExpression="P2陨石踩塔指引" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="UseTTS">
-            <Condition Enabled="false" Grouping="Or" />
-          </Action>
-          <Action OrderNumber="17" OBSEndPoint="" VariableOp="SetNumeric" VariableName="P2Guide2" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
-            <Condition Enabled="false" Grouping="Or" />
-          </Action>
-          <Action OrderNumber="18" OBSEndPoint="" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Placeholder">
-            <Condition Enabled="false" Grouping="Or" />
-          </Action>
-          <Action OrderNumber="19" OBSEndPoint="" UseTTSTextExpression="P3钢铁月环画图和小抄" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="UseTTS">
-            <Condition Enabled="false" Grouping="Or" />
-          </Action>
-          <Action OrderNumber="20" OBSEndPoint="" VariableOp="SetNumeric" VariableName="P3Guide1" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
-            <Condition Enabled="false" Grouping="Or" />
-          </Action>
-          <Action OrderNumber="21" OBSEndPoint="" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Placeholder">
-            <Condition Enabled="false" Grouping="Or" />
-          </Action>
-          <Action OrderNumber="22" OBSEndPoint="" UseTTSTextExpression="P3麻将小抄" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="UseTTS">
-            <Condition Enabled="false" Grouping="Or" />
-          </Action>
-          <Action OrderNumber="23" OBSEndPoint="" VariableOp="SetNumeric" VariableName="P3Guide2" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
-            <Condition Enabled="false" Grouping="Or" />
-          </Action>
-          <Action OrderNumber="24" OBSEndPoint="" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Placeholder">
-            <Condition Enabled="false" Grouping="Or" />
-          </Action>
-          <Action OrderNumber="25" OBSEndPoint="" UseTTSTextExpression="P3放塔小抄和预览" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="UseTTS">
-            <Condition Enabled="false" Grouping="Or" />
-          </Action>
-          <Action OrderNumber="26" OBSEndPoint="" VariableOp="SetNumeric" VariableName="P3Guide3" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
-            <Condition Enabled="false" Grouping="Or" />
-          </Action>
-          <Action OrderNumber="27" OBSEndPoint="" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Placeholder">
-            <Condition Enabled="false" Grouping="Or" />
-          </Action>
-          <Action OrderNumber="28" OBSEndPoint="" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="DisableTrigger" TriggerId="ed73fb5e-11e3-4b6f-999e-93f3852e06e2" ActionType="Trigger" ExecutionDelayExpression="500" Asynchronous="False">
-            <Condition Enabled="false" Grouping="Or" />
-          </Action>
-        </Actions>
-        <Condition Enabled="false" Grouping="Or" />
-        <Conditions />
-      </Trigger>
       <Trigger Enabled="true" Source="FFXIVNetwork" Name="我优先级多少(在上方勾上自己的职能,在下方填写队伍中对应人的ID)" Id="74dcb5c6-fdd8-490e-aa25-acbc352ecf70" RegularExpression="^27\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;myidis&gt;[A-Z0-9]{4})\|">
         <Actions>
           <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="mtismy" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Variable" Asynchronous="False">
@@ -5674,6 +5581,137 @@
         <Condition Enabled="true" Grouping="Or">
           <ConditionSingle Enabled="true" ExpressionL="${var:isp2le}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
         </Condition>
+        <Conditions />
+      </Trigger>
+      <Trigger Enabled="true" Name="计算偏移值" Id="183f218d-42ec-4557-8459-af024a7271e4" RegularExpression="^27\|[^|]*\|[^|]*\|(?&lt;ColorTarget&gt;[^\|]*)\|[^|]*\|[^|]*\|(?&lt;ID&gt;[0-9A-F]{4})\|">
+        <Actions>
+          <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="ColorHeadMarkOffset" VariableExpression="hex2dec(${ID})-hex2dec(2F)" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${evar:ColorHeadMarkOffset}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+            </Condition>
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+        <Conditions />
+      </Trigger>
+      <Trigger Enabled="true" Source="FFXIVNetwork" Name="绘图功能控制(更改后手动触发或下一次重开生效)" Id="0e74087f-eac3-4cba-8c92-e91cb68f0142" RegularExpression="^33\|[^|]*\|[^|]*\|400000(?&gt;03|10)\|">
+        <Actions>
+          <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="1开0关,关某个功能需要交換勾" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="UseTTS">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="2" OBSEndPoint="" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Placeholder">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="3" OBSEndPoint="" UseTTSTextExpression="位置标记(脚下的小黄点)" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="UseTTS">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="4" OBSEndPoint="" VariableOp="SetNumeric" VariableName="myposition" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="5" OBSEndPoint="" VariableOp="SetNumeric" VariableName="myposition" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="6" OBSEndPoint="" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Placeholder">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="7" OBSEndPoint="" UseTTSTextExpression="光玉爆炸范围" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="UseTTS">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="8" OBSEndPoint="" VariableOp="SetNumeric" VariableName="OrbExpRange" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="9" OBSEndPoint="" VariableOp="SetNumeric" VariableName="OrbExpRange" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="10" OBSEndPoint="" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Placeholder">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="11" OBSEndPoint="" UseTTSTextExpression="地震范围" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="UseTTS">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="12" OBSEndPoint="" VariableOp="SetNumeric" VariableName="EarthquakeRange" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="13" OBSEndPoint="" VariableOp="SetNumeric" VariableName="EarthquakeRange" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="14" OBSEndPoint="" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Placeholder">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="15" OBSEndPoint="" UseTTSTextExpression="冲锋范围" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="UseTTS">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="16" OBSEndPoint="" VariableOp="SetNumeric" VariableName="ChargeRange" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="17" OBSEndPoint="" VariableOp="SetNumeric" VariableName="ChargeRange" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="18" OBSEndPoint="" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Placeholder">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="19" OBSEndPoint="" UseTTSTextExpression="P2雷枪踩塔指引" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="UseTTS">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="20" OBSEndPoint="" VariableOp="SetNumeric" VariableName="P2Guide1" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="21" OBSEndPoint="" VariableOp="SetNumeric" VariableName="P2Guide1" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="22" OBSEndPoint="" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Placeholder">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="23" OBSEndPoint="" UseTTSTextExpression="P2陨石踩塔指引" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="UseTTS">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="24" OBSEndPoint="" VariableOp="SetNumeric" VariableName="P2Guide2" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="25" OBSEndPoint="" VariableOp="SetNumeric" VariableName="P2Guide2" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="26" OBSEndPoint="" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Placeholder">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="27" OBSEndPoint="" UseTTSTextExpression="P3钢铁月环画图和小抄" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="UseTTS">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="28" OBSEndPoint="" VariableOp="SetNumeric" VariableName="P3Guide1" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="29" OBSEndPoint="" VariableOp="SetNumeric" VariableName="P3Guide1" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="30" OBSEndPoint="" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Placeholder">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="31" OBSEndPoint="" UseTTSTextExpression="P3麻将小抄" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="UseTTS">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="32" OBSEndPoint="" VariableOp="SetNumeric" VariableName="P3Guide2" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="33" OBSEndPoint="" VariableOp="SetNumeric" VariableName="P3Guide3" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="34" OBSEndPoint="" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Placeholder">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="35" OBSEndPoint="" UseTTSTextExpression="P3放塔小抄和预览" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="UseTTS">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="36" OBSEndPoint="" VariableOp="SetNumeric" VariableName="P3Guide3" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="37" OBSEndPoint="" VariableOp="SetNumeric" VariableName="P3Guide2" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="38" OBSEndPoint="" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Placeholder">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
         <Conditions />
       </Trigger>
     </Triggers>
