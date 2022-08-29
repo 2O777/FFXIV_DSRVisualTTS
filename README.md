@@ -19,7 +19,7 @@
 在卫月设置中添加以下库后搜索Splatoon进行安装 
 `https://raw.githubusercontent.com/NightmareXIV/MyDalamudPlugins/main/pluginmaster.json`  
 **建议同时添加DSR Toolbox补全更丰富的提示功能**  
-
+**建议找个视距解锁,不然超出屏幕太多的直线绘制稍有不全**
 > 务必启用插件内以下设置
 > 
 > ![图片](https://user-images.githubusercontent.com/31427200/170856016-206adf2e-54ce-477d-8ca7-0278254efabb.png)
