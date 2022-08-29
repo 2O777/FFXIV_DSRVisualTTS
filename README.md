@@ -30,8 +30,9 @@
 **建议找个视距解锁,不然超出屏幕太多的直线绘制稍有不全**
 > 务必启用插件内以下设置
 > 
-> ![图片](https://user-images.githubusercontent.com/31427200/170856016-206adf2e-54ce-477d-8ca7-0278254efabb.png)
-> 务必取消插件内以下设置
+> ![图片](https://user-images.githubusercontent.com/31427200/170856016-206adf2e-54ce-477d-8ca7-0278254efabb.png)   
+> 
+> 务必取消插件内以下设置   
 > 
 > ![BF1F9FCAD43E718A0B38FB965B34F61B](https://user-images.githubusercontent.com/31427200/187163001-e637df6a-a8fb-4634-afa5-e123a727348d.png)
 
