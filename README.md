@@ -22,6 +22,8 @@
 **国服**  
 'https://raw.githubusercontent.com/NightmareXIV/MyDalamudPlugins/main/cn.json'  
 **不要添加错了,否则无法启用插件**  
+国服添加插件时会提示这个,按黄框里的按钮  
+![QQ截图20220829192153](https://user-images.githubusercontent.com/31427200/187190784-08749c67-d78d-42c4-a055-8aebb901543f.png)  
 
 **建议同时添加DSR Toolbox补全更丰富的提示功能**  
 **建议找个视距解锁,不然超出屏幕太多的直线绘制稍有不全**
