@@ -8,14 +8,14 @@
 * 不负责解决 卫月 / Splatoon / Triggernometry 本身的问题
 
 ## 本技能提醒可以做什么
-* 显示本不应显示在地上的技能 (比如雷枪冲锋路径,光玉爆炸半径)
+* 显示本不应显示在地上的技能 (比如雷枪冲锋路径,光玉爆炸半径等)
 * ![图片](https://user-images.githubusercontent.com/31427200/170696438-ec78dc68-0bbf-42c9-bf87-d1ce11ae0c4c.png)
-* 将自己该去的位置在屏幕上画出来
-* ![图片](https://user-images.githubusercontent.com/31427200/170696636-5f7c606a-7794-4edb-9fd4-699a2c7bf5a2.png)
 * 一部分普通TTS功能
 
 ## 本技能提醒基于[Triggernometry](https://github.com/paissaheavyindustries/Triggernometry)编写
 * **建议使用官方版TRN,整合版内的旧版本可能会无法导入或工作不正常**
+
+![注意](https://user-images.githubusercontent.com/31427200/187145801-abae17c9-804f-4f36-bb32-382f3b43fe5c.png)
 
 ## 本技能提醒需要卫月插件[Splatoon](https://github.com/Eternita-S/Splatoon)
 * **请务必按照上述链接前往安装**
