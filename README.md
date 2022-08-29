@@ -12,6 +12,7 @@
 ## 本技能提醒基于[Triggernometry](https://github.com/paissaheavyindustries/Triggernometry)编写
  **建议使用官方版TRN,整合版内的旧版本可能会无法导入或工作不正常**
 
+## 国服已测试通过
 ![注意](https://user-images.githubusercontent.com/31427200/187145801-abae17c9-804f-4f36-bb32-382f3b43fe5c.png)
 
 ## 本技能提醒需要卫月插件[Splatoon]
@@ -20,7 +21,7 @@
 **国际服**  
 `https://raw.githubusercontent.com/NightmareXIV/MyDalamudPlugins/main/pluginmaster.json`  
 **国服**  
-'https://raw.githubusercontent.com/NightmareXIV/MyDalamudPlugins/main/cn.json'  
+`https://raw.githubusercontent.com/NightmareXIV/MyDalamudPlugins/main/cn.json`  
 **不要添加错了,否则无法启用插件**  
 国服添加插件时会提示这个,按黄框里的按钮  
 ![QQ截图20220829192153](https://user-images.githubusercontent.com/31427200/187190784-08749c67-d78d-42c4-a055-8aebb901543f.png)  
