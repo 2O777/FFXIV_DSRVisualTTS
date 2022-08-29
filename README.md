@@ -17,7 +17,12 @@
 ## 本技能提醒需要卫月插件[Splatoon]
 **没有安装该插件/卫月不可用时请禁用该组触发器,会导致游戏和电脑卡顿**  
 在卫月设置中添加以下库后搜索Splatoon进行安装 
+**国际服**  
 `https://raw.githubusercontent.com/NightmareXIV/MyDalamudPlugins/main/pluginmaster.json`  
+**国服**  
+'https://raw.githubusercontent.com/NightmareXIV/MyDalamudPlugins/main/cn.json'  
+**不要添加错了,否则无法启用插件**  
+
 **建议同时添加DSR Toolbox补全更丰富的提示功能**  
 **建议找个视距解锁,不然超出屏幕太多的直线绘制稍有不全**
 > 务必启用插件内以下设置
