@@ -1,40 +1,46 @@
 ## 使用本技能提醒请勿截图或直播,会被SE/拂晓组封号,不要在任何场合截图炫耀或宣称使用了任何第三方工具/插件
-* 由于Splatoon插件是在屏幕上新增一层进行绘制,并没有绘制进游戏本身,所以仅捕捉游戏的OBS看不到此层效果
+ 由于Splatoon插件是在屏幕上新增一层进行绘制,并没有绘制进游戏本身,所以仅捕捉游戏的OBS看不到此层效果
 
 ## 本技能提醒很多触发器逻辑抄写自已发布的普通TTS,会在每一处都标记原始来源
-* 允许其它人重写/优化并重新发布基于该技能提醒触发器的改进版本
+ 允许其它人重写/优化并重新发布基于该技能提醒触发器的改进版本
 
 ## 本技能提醒可以做什么
-* 显示本不应显示在地上的技能 (比如雷枪冲锋路径,光玉爆炸半径等)
-* ![图片](https://user-images.githubusercontent.com/31427200/170696438-ec78dc68-0bbf-42c9-bf87-d1ce11ae0c4c.png)
-* 一部分普通TTS功能
+ 显示本不应显示在地上的技能 (比如雷枪冲锋路径,光玉爆炸半径等)
+ ![图片](https://user-images.githubusercontent.com/31427200/170696438-ec78dc68-0bbf-42c9-bf87-d1ce11ae0c4c.png)
+ 一部分普通TTS功能
 
 ## 本技能提醒基于[Triggernometry](https://github.com/paissaheavyindustries/Triggernometry)编写
-* **建议使用官方版TRN,整合版内的旧版本可能会无法导入或工作不正常**
+ **建议使用官方版TRN,整合版内的旧版本可能会无法导入或工作不正常**
 
 ![注意](https://user-images.githubusercontent.com/31427200/187145801-abae17c9-804f-4f36-bb32-382f3b43fe5c.png)
 
 ## 本技能提醒需要卫月插件[Splatoon]
-* **没有安装该插件/卫月不可用时请禁用该组触发器,会导致游戏和电脑卡顿**
-* 在卫月设置中添加以下库后搜索Splatoon进行安装
-`https://raw.githubusercontent.com/NightmareXIV/MyDalamudPlugins/main/pluginmaster.json`
-* 务必启用插件内以下设置
-* ![图片](https://user-images.githubusercontent.com/31427200/170856016-206adf2e-54ce-477d-8ca7-0278254efabb.png)
-* 务必取消插件内以下设置
-* ![BF1F9FCAD43E718A0B38FB965B34F61B](https://user-images.githubusercontent.com/31427200/187163001-e637df6a-a8fb-4634-afa5-e123a727348d.png)
+**没有安装该插件/卫月不可用时请禁用该组触发器,会导致游戏和电脑卡顿**  
+在卫月设置中添加以下库后搜索Splatoon进行安装 
+`https://raw.githubusercontent.com/NightmareXIV/MyDalamudPlugins/main/pluginmaster.json`  
+**建议同时添加DSR Toolbox补全更丰富的提示功能**  
+
+> 务必启用插件内以下设置
+> 
+> ![图片](https://user-images.githubusercontent.com/31427200/170856016-206adf2e-54ce-477d-8ca7-0278254efabb.png)
+> 务必取消插件内以下设置
+> 
+> ![BF1F9FCAD43E718A0B38FB965B34F61B](https://user-images.githubusercontent.com/31427200/187163001-e637df6a-a8fb-4634-afa5-e123a727348d.png)
 
 ## 如果有就功能进行探讨的,欢迎加群838051153
-* 不负责解决 卫月 / Splatoon / Triggernometry 本身的问题
+ 不负责解决 卫月 / Splatoon / Triggernometry 本身的问题
 
 ## 请手动填写玩家名至该触发器
 ![图片](https://user-images.githubusercontent.com/31427200/170809073-2cfdcd4d-d831-4dae-9f32-e57ffb231d2d.png)
 
-## P1相关
+## P1
 **锁链站位基于**
-`△×□
-○  ○
-□×△`
-如需要更改,请前往
+> △×□  
+> ○  ○  
+> □×△  
+
+如需要更改,请前往  
+
 >P1
 >
 > -索尼按钮
@@ -46,49 +52,50 @@
 
 _该处查找标记的逻辑来自[Discord / Jin❗Vitali#1988](https://discord.com/channels/374517624228544512/399219257302450196/968813549482831882)_
 
-## P2一运(雷枪) ( 有走位指引 )
-* 蓝标点名踩塔优先级基于
-* **无视T的**
-* ![图片](https://user-images.githubusercontent.com/31427200/170693486-cd942000-07b5-459d-a1cd-ee598048ecb3.png)
-* ![图片](https://user-images.githubusercontent.com/31427200/170693710-fde08f75-9961-4eab-8399-6828eb58a1a8.png)
+绘制P4.5诱导扇形AOE后放置的地面AOE位置  
 
-**该优先级无法更改**
+## P2一运(雷枪)  
+显示冲锋范围  
+显示地震范围  
+显示托尔丹所在位置(几率不报,但不可能报错)  
+明显提示谁点了蓝标  
 
-## P2二运 (圣杖)
-* **跑刀没有走位/换位指引,依靠画出危险范围作为提醒**
-### 陨石换位 ( 有走位指引 )
-* 点了陨石一组叫**陨石组**没点陨石一组叫**固定组**
-* 刀跑完之后按如下方向站位
-* ![图片](https://user-images.githubusercontent.com/31427200/170695155-ddbf799a-e9f8-4f75-8666-7cc70385bc57.png)
-
-* **如果发生换位只有陨石组参与**
-* 陨石永远从 **A / C** 起跑
-* **B / D** 的人点了陨石和 **A / C** 没点陨石的人交換
-* **换位举例**
-* ![图片](https://user-images.githubusercontent.com/31427200/170695506-81a7875b-acab-4421-9d3d-93a1ae343f49.png)
-* 
-* **如果发生陨石刚好在 B / D 方向,执行如下换位**
-* ![图片](https://user-images.githubusercontent.com/31427200/170695629-67585bcc-8602-47f8-90ad-6e6639d7c805.png)
-
-### 陨石踩塔 ( 有走位指引 )
-***
-* **发生陨石换位后以换位后的位置为准**(例如D的D4点了陨石跑A点放了,你作为A的D1被换到了D点,你第二波踩塔去踩D组的而不是A组的)
-* 外塔优先级为面向场外**中＞左＞右**
-* ![图片](https://user-images.githubusercontent.com/31427200/170697573-da3903f0-a058-4cb4-9ead-556b92dad142.png)
-* 内塔以看向场内左手边的为第一优先级,如果没刷顺时针找空塔补位
-* 第二轮踩塔陨石组正点,固定组踩正点的顺时针
-
+## P2二运(圣杖)  
+光球所在位置标记(觉得比较乱可以关掉光球在哪)  
+_配合DSR Toolbox可以提示是否正确背对和龙眼及托尔丹准确位置_  
+填写了小队各职业名字时可以语音播报陨石换位(AC固定,同职业换位)  
 
 ## P3
->* 目前有画钢铁月环
->* 有写到每个人身上的小抄( 带自身buff监控 )
->* 有放塔距离大概参考画图
->* **其余的正在做**
+显示附在人身上的小抄**务必去绘图功能控制最下面设置小抄大小**  
+显示塔预计放在什么位置  
+显示塔预计放在了什么位置(可能不准)  
+显示诱导的直线AOE  
+显示尼德霍格的扇形随机点名AOE  
 
 ## P4
->* 有buff监控
->* 有换位提醒
+语音提示自己什么颜色BUFF  
+显示并记录第一组堕天冲到的人  
+显示P4.5诱导扇形AOE后放置的地面AOE位置  
 
-## P5
->* 有对自己buff该去哪的播报 ( 优先级基于MTSTH1H2D1-4,面向基于斧子哥或者黑龙都行 ) _修改自[Discord / King Pendragon#3589](https://discord.com/channels/374517624228544512/399219257302450196/973021350069420072)_
+## P5一运
+显示拉线的人该站的安全点  
+显示蓝点名该站的安全点  
+显示斧子哥的位置  
+显示液体火点了谁(给治疗职业提示用)  
+托尔丹的不可躲八方范围  
+显示谁点了雷点名  
 
+## P5二运
+显示谁点了死宣(意义不大)  
+显示冲锋范围  
+显示地震范围  
+
+## P6
+显示辣翅辣尾  
+显示左右翅膀  
+显示冰火线站位位置  
+显示BUFF与交换时爆炸范围
+
+## P7
+显示冰火内外  
+显示自己去的塔刷哪了  
