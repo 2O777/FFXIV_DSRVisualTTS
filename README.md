@@ -15,7 +15,7 @@
 ## 国服已测试通过 (2022.8.29)
 ![注意](https://user-images.githubusercontent.com/31427200/187145801-abae17c9-804f-4f36-bb32-382f3b43fe5c.png)
 
-## 本技能提醒需要卫月插件[Splatoon]
+## 本技能提醒需要卫月插件[Splatoon](https://github.com/NightmareXIV/Splatoon)
 **没有安装该插件/卫月不可用时请禁用该组触发器,会导致游戏和电脑卡顿**  
 在卫月设置中添加以下库后搜索Splatoon进行安装  
 **国际服**  
